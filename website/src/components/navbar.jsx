@@ -30,7 +30,7 @@ const StyledTabs = withStyles({
       fontWeight: theme.typography.fontWeightRegular,
       fontSize: "calc(10px + 2vmin)",
       marginRight: theme.spacing(1),
-      marginTop: theme.spacing(1),
+      marginTop: "0.4vh",
       float: "right",
       "&:focus": {
         opacity: 50
