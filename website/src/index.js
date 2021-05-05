@@ -10,6 +10,8 @@ ReactDOM.render(
   <React.StrictMode>
     <NavBar />
     <App />
+    <App />
+    <App />
   </React.StrictMode>,
   document.getElementById('root')
 );

@@ -4,6 +4,8 @@ import { makeStyles, withStyles } from "@material-ui/core/styles";
 import { createMuiTheme, responsiveFontSizes, ThemeProvider } from '@material-ui/core/styles';
 import './navbar.scss'
 import { AppBar, Tabs, Tab } from '@material-ui/core';
+import { useScrollTrigger } from '@material-ui/core/useScrollTrigger';
+
 import { Typography } from '@material-ui/core/Typography';
 import { TabPanel, TabContext } from '@material-ui/lab';
 
@@ -33,10 +35,12 @@ const StyledTabs = withStyles({
       marginTop: "0.4vh",
       float: "right",
       "&:focus": {
-        opacity: 50
+        opacity: 50,
+        color: "#FFB6A8",
       },
       "&:hover": {
-          opacity: 50
+        opacity: 50,
+        color: "#FFB6A8",
       }
     }
   }))((props) => <Tab disableRipple {...props} />);
@@ -44,7 +48,8 @@ const StyledTabs = withStyles({
   const StyledAppBar = withStyles ((theme) => ({
       root: {
           backgroundColor: "#E8FFFC",
-          height: "8vh"
+          height: "8vh",
+          position: "fixed"
       }
   }))((props) => <AppBar {...props} />);
 
