@@ -3,8 +3,8 @@ import ReactDOM from 'react-dom';
 import { makeStyles, withStyles } from "@material-ui/core/styles";
 import { createMuiTheme, responsiveFontSizes, ThemeProvider } from '@material-ui/core/styles';
 import './navbar.scss'
-import { AppBar, Tabs, Tab } from '@material-ui/core';
-import { useScrollTrigger } from '@material-ui/core/useScrollTrigger';
+import { AppBar, Tabs, Tab, useScrollTrigger } from '@material-ui/core';
+import Slide from '@material-ui/core/Slide';
 
 import { Typography } from '@material-ui/core/Typography';
 import { TabPanel, TabContext } from '@material-ui/lab';
@@ -34,10 +34,6 @@ const StyledTabs = withStyles({
       marginRight: theme.spacing(1),
       marginTop: "0.4vh",
       float: "right",
-      "&:focus": {
-        opacity: 50,
-        color: "#FFB6A8",
-      },
       "&:hover": {
         opacity: 50,
         color: "#FFB6A8",
@@ -53,38 +49,55 @@ const StyledTabs = withStyles({
       }
   }))((props) => <AppBar {...props} />);
 
-//   const useStyles = makeStyles((theme) => ({
-//     root: {
-//       flexGrow: 1
-//     },
-//     padding: {
-//       padding: theme.spacing(3)
-//     },
-//     demo1: {
-//       backgroundColor: theme.palette.background.paper
-//     },
-//     demo2: {
-//       backgroundColor: "#2e1534"
-//     }
-//   }));
+function ElevationScroll(props) {
+  const { children } = props;
 
-class NavBar extends React.Component {
-    render() {
-        return (
-            <ThemeProvider theme={theme}>
-            <div>
-                <StyledAppBar className="appbar" position="static">
-                    <StyledTabs variant="scrollable" aria-label="simple tabs example" className="tab" value="0">
-                        <StyledTab label="Home" value="0"/>
-                        <StyledTab label="Showcase" value="1"/>
-                        <StyledTab label="Contact" value="2"/>
-                        <StyledTab label="Resume" value="3"/>
-                    </StyledTabs>
-                </StyledAppBar>
-            </div>
-            </ThemeProvider>
-        );
-    }
+  const trigger = useScrollTrigger({
+    disableHysteresis: true,
+    threshold: 0
+  })
+
+  return React.cloneElement(children, {
+    elevation: trigger ? 4 : 0,
+  });
 }
+
+function AppearOnScroll(props) {
+  const { children } = props;
+
+  const trigger = useScrollTrigger({threshold: 100});
+
+  return (
+    <Slide appear={false} direction="down" in={!trigger}>
+      {children}
+    </Slide>
+  )
+}
+
+function NavBar(props) {
+
+  const [value, setValue] = React.useState(0);
+
+  const handleChange = (event, newValue) => {
+    setValue(newValue);
+  };
+
+
+  return (
+    <ThemeProvider theme={theme}>
+    <ElevationScroll {...props}>
+    <StyledAppBar className="appbar" position="static">
+        <StyledTabs value={value} onChange={handleChange} variant="scrollable" aria-label="simple tabs example" className="tab">
+            <StyledTab label="Home" value="0"/>
+            <StyledTab label="Showcase" value="1"/>
+            <StyledTab label="Contact" value="2"/>
+            <StyledTab label="Resume" value="3"/>
+        </StyledTabs>
+    </StyledAppBar>
+    </ElevationScroll>
+    </ThemeProvider>
+  )
+}
+
 
 export default NavBar;
