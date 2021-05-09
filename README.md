@@ -11,8 +11,8 @@ As a sophomore in University of Waterloo's Computer Science and Business Adminis
 
 Please feel free to contact me at erche3742@gmail.com.
 
-### Languages: Java, JavaScript, C, C++, Java, Python, HTML/CSS
-### Frameworks: React (Library), React-native, Angular, Material-UI, Bootstrap, Jquery
+### Languages: Java, JavaScript, C, C++, Java, Python, HTML/CSS, Dart
+### Frameworks: React (Library), React-native, Angular, Flutter, Material-UI, Bootstrap, Jquery
 ### Tools: Git, Figma, JIRA, Balsamiq, Adobe Premiere and After Effects
 
 <!--
