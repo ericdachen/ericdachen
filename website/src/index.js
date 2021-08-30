@@ -3,15 +3,14 @@ import ReactDOM from 'react-dom';
 import './index.scss';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import NavBar from '../src/components/navbar.jsx'
+import NavBar from './components/navbar/navbar.jsx';
+import HomePage from './components/home/home.jsx';
 
 
 ReactDOM.render(
   <React.StrictMode>
     <NavBar />
-    <App />
-    <App />
-    <App />
+    <HomePage />
   </React.StrictMode>,
   document.getElementById('root')
 );

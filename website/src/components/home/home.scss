@@ -1,0 +1,13 @@
+.homeImage {
+    max-width: 100%;
+    max-height: 99%;
+    transform: scale(1.20);
+    opacity: 0.7;
+    transition: opacity 0.4s, transform 0.4s;
+    background-color: black;
+}
+
+.homeImage:hover {
+    transform: scale(1.03);
+    opacity: 1;
+}
