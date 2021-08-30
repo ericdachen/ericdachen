@@ -1,5 +1,4 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
 import './home.scss'
 import homeImage from '../assets/IMG_4583.png';
 
