@@ -7,7 +7,7 @@ From coffee machines and e-readers, to cars and global-positioning systems, its 
 
 Business and entrepreneurship drives our creativity. Computer science gives us the tools to express it!
 
-As a sophomore in University of Waterloo's Computer Science and Business Administration Double Degree program, I am excited to explore the world of computer science to develop innovative solutions to some of the world's most pressing issues. 
+As a junior in University of Waterloo's Computer Science and Business Administration Double Degree program, I am excited to explore the world of computer science to develop innovative solutions to some of the world's most pressing issues. 
 
 Please feel free to contact me at erche3742@gmail.com.
 
