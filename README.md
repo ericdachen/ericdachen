@@ -9,7 +9,7 @@ Business and entrepreneurship drives our creativity. Computer science gives us t
 
 As a junior in University of Waterloo's Computer Science and Business Administration Double Degree program, I am excited to explore the world of computer science to develop innovative solutions to some of the world's most pressing issues. 
 
-Please feel free to contact me at erche3742@gmail.com.
+Please feel free to contact me at erche3742@gmail.com. 
 
 ### Languages: Java, JavaScript, TypeScript C, C++, Java, Python, HTML/CSS, Dart
 ### Frameworks: React (Library), React-native, Angular, Flutter, Material-UI, Bootstrap, Jquery
