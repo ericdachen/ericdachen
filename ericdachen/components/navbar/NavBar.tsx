@@ -10,15 +10,10 @@ import {
   Modal,
   ModalOverlay,
   ModalContent,
-  ModalHeader,
-  ModalFooter,
-  ModalBody,
-  ModalCloseButton,
   useDisclosure,
   useColorModeValue,
   Stack,
   useColorMode,
-  Center,
 } from "@chakra-ui/react";
 import ProfileModal from "../social-modal/ProfileModal";
 import { MoonIcon, SunIcon } from "@chakra-ui/icons";
