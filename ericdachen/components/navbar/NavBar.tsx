@@ -1,4 +1,4 @@
-import { ReactNode } from "react";
+import React, { ReactNode } from "react";
 import {
   Box,
   Flex,
@@ -22,7 +22,8 @@ import {
 import ProfileModal from "../social-modal/ProfileModal";
 import { MoonIcon, SunIcon } from "@chakra-ui/icons";
 
-const Links = ["Dashboard", "Projects", "Team"];
+const Links = ["Home", "Showcase", "Contact", "Resume"];
+// const finalRef = React.useRef();
 
 const NavLink = ({ children }: { children: ReactNode }) => (
   <Link
@@ -31,6 +32,7 @@ const NavLink = ({ children }: { children: ReactNode }) => (
     rounded={"md"}
     _hover={{
       textDecoration: "none",
+      color: useColorModeValue("red.300", "red.200"),
       bg: useColorModeValue("gray.200", "gray.700"),
     }}
     href={"#"}
@@ -44,26 +46,33 @@ function NavBar() {
   const { isOpen, onOpen, onClose } = useDisclosure();
   return (
     <>
-      <Modal size="sm" isOpen={isOpen} onClose={onClose} motionPreset="scale">
-        <ModalOverlay />
-        <ModalContent>
-          <ProfileModal />
-        </ModalContent>
-      </Modal>
       <Box bg={useColorModeValue("gray.100", "gray.900")} px={4}>
         <Flex h={16} alignItems={"center"} justifyContent={"space-between"}>
+          <Modal
+            size="sm"
+            isOpen={isOpen}
+            onClose={onClose}
+            motionPreset="scale"
+          >
+            <ModalOverlay />
+            <ModalContent>
+              <ProfileModal />
+            </ModalContent>
+          </Modal>
           <Menu>
-            <MenuButton
-              as={Button}
-              rounded={"full"}
-              variant={"link"}
-              cursor={"pointer"}
-              minW={0}
-              onClick={onOpen}
-            >
-              <Avatar size={"sm"} src={"headshot.JPG"} />
-            </MenuButton>{" "}
-            <HStack spacing={8} alignItems={"center"}>
+            <HStack spacing={8} alignItems={"left"}>
+              <MenuButton
+                as={Button}
+                rounded={"full"}
+                variant={"link"}
+                cursor={"pointer"}
+                minW={0}
+                onClick={onOpen}
+                _hover={{ bg: useColorModeValue("gray.200", "gray.700") }}
+                marginTop={"50px"}
+              >
+                <Avatar size={"xl"} src={"headshot.JPG"} />
+              </MenuButton>{" "}
               <HStack
                 as={"nav"}
                 spacing={4}
@@ -75,7 +84,7 @@ function NavBar() {
               </HStack>
             </HStack>
           </Menu>
-          <Flex alignItems={"center"}>
+          <Flex alignItems={"right"}>
             <Stack direction={"row"} spacing={7}>
               <Button onClick={toggleColorMode}>
                 {colorMode === "light" ? "🌕" : "☀️"}

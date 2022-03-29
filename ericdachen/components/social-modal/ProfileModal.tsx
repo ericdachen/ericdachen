@@ -9,6 +9,8 @@ import {
   Link,
   Badge,
   useColorModeValue,
+  ModalCloseButton,
+  Modal,
 } from "@chakra-ui/react";
 
 export default function SocialProfileSimple() {
@@ -23,6 +25,7 @@ export default function SocialProfileSimple() {
         p={6}
         textAlign={"center"}
       >
+        <ModalCloseButton marginLeft={"-10px"} marginBottom={"15px"} />
         <Avatar
           size={"xl"}
           src={"headshot.jpg"}
