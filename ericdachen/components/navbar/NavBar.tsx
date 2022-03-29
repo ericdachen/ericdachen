@@ -5,8 +5,12 @@ import {
   Avatar,
   Link,
   Button,
+  HStack,
   Menu,
   MenuButton,
+  MenuList,
+  MenuItem,
+  MenuDivider,
   Modal,
   ModalOverlay,
   ModalContent,
@@ -17,6 +21,8 @@ import {
 } from "@chakra-ui/react";
 import ProfileModal from "../social-modal/ProfileModal";
 import { MoonIcon, SunIcon } from "@chakra-ui/icons";
+
+const Links = ["Dashboard", "Projects", "Team"];
 
 const NavLink = ({ children }: { children: ReactNode }) => (
   <Link
@@ -57,12 +63,22 @@ function NavBar() {
             >
               <Avatar size={"sm"} src={"headshot.JPG"} />
             </MenuButton>{" "}
+            <HStack spacing={8} alignItems={"center"}>
+              <HStack
+                as={"nav"}
+                spacing={4}
+                display={{ base: "none", md: "flex" }}
+              >
+                {Links.map((link) => (
+                  <NavLink key={link}>{link}</NavLink>
+                ))}
+              </HStack>
+            </HStack>
           </Menu>
-
           <Flex alignItems={"center"}>
             <Stack direction={"row"} spacing={7}>
               <Button onClick={toggleColorMode}>
-                {colorMode === "light" ? <MoonIcon /> : <SunIcon />}
+                {colorMode === "light" ? "🌕" : "☀️"}
               </Button>
             </Stack>
           </Flex>
