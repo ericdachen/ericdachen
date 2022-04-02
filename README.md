@@ -11,9 +11,11 @@ As a junior in University of Waterloo's Computer Science and Business Administra
 
 Please feel free to contact me at erche3742@gmail.com 
 
-### Languages: Python, Java, JavaScript, TypeScript C, C++, Java, HTML/CSS, Dart
-### Frameworks: React (Library), React-native, Angular, Flutter, Material-UI, Bootstrap, Jquery, 
-### Tools: Git, Figma, JIRA, Balsamiq, Adobe Premiere and After Effects
+**Languages:** Python, Java, JavaScript, TypeScript C, C++, Java, HTML/CSS, Dart
+
+**Frameworks:** React (Library), React-native, Angular, Flutter, Material-UI, Bootstrap, Jquery, gRPC, Kafka, RedShift, CircleCI, Airflow, Debezium
+
+**Tools:** Git, Figma, JIRA, Balsamiq, Adobe Premiere and After Effects
 
 <!--
 **ericdachen/ericdachen** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
