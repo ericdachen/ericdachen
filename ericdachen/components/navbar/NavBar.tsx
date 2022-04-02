@@ -46,7 +46,12 @@ function NavBar() {
   const { isOpen, onOpen, onClose } = useDisclosure();
   return (
     <>
-      <Box bg={useColorModeValue("gray.100", "gray.900")} px={4}>
+      <Box
+        position={"fixed"}
+        bg={useColorModeValue("gray.100", "gray.900")}
+        px={4}
+        width={"100%"}
+      >
         <Flex h={16} alignItems={"center"} justifyContent={"space-between"}>
           <Modal
             size="sm"
