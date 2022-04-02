@@ -48,8 +48,7 @@ function HomePage() {
           </div>
           <div>
             <Text fontSize={"70px"}>
-            <Typist>
-              <Text fontSize={"70px"}> a Full Stack Developer</Text>
+            <Typist>a Full Stack Developer
             </Typist>
             </Text>
 
