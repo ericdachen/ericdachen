@@ -1,4 +1,4 @@
-### Hi! I'm Eric!!! 👋👋👋
+### Hi! I'm Eric!!! 👋
 
 Like technology, I am always developing as a learner, software developer, and student! 🚀
 
