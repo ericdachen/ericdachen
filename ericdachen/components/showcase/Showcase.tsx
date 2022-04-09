@@ -37,8 +37,8 @@ function ShowcasePage() {
             <Center>
                 <VStack spacing={'3vw'}>
                     <VStack spacing={'-0vw'}>
-                    <Text fontSize={"5vw"}>Showcase</Text>
-                    <Box height={'0.5em'} width={'8em'} bg={useColorModeValue("gray.900", "gray.200")}/>
+                    <Text fontSize={"5vw"} color={useColorModeValue("red.300", "red.200")}>Showcase</Text>
+                    <Box height={'0.5em'} width={'8em'} bg={useColorModeValue("red.300", "red.200")}/>
                     </VStack>
                 <HStack spacing={'5vw'}>
                     <ProjectBox boxlink="www.google.com"></ProjectBox>

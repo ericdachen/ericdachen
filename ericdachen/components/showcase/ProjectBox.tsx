@@ -35,8 +35,8 @@ function ProjectBox(props) {
     return (
         <>
         <LinkBox>
-        <Box height={"40em"} width={"20em"} onClick={openProject} bg={useColorModeValue("gray.400","gray.600")}>
-            <Image src='https://avatars.githubusercontent.com/u/54382303?v=4'/>
+        <Box onClick={openProject} bg={useColorModeValue("gray.400","gray.600")}>
+            <Image height={"35em"} width={"20em"} objectFit={"cover"} src='UW.jpg'/>
         </Box>
         </LinkBox>
 
