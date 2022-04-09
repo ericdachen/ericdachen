@@ -1,5 +1,4 @@
-import React, { ReactNode } from "react";
-import Typist from 'react-typist';
+import React, { useState, ReactNode, useEffect } from "react";
 
 import {
   Box,
@@ -26,17 +25,28 @@ import {
   VStack
 } from "@chakra-ui/react";
 import ParticlePage from "./Particles";
+var ReactRotatingText = require("react-rotating-text");
 
 
 
 function HomePage() {
+  const [curTextIndex, setCurTextIndex] = useState(0);
+
   const homeTypingText = [
-    "computer science and business student",
+    "a cs and business student",
     "a Full-Stack developer",
-    "self-proclaimed stock market enthusiast",
-    "retired competitive tennis player",
-    "new to the twenty-somethings club"
+    "a stock market enthusiast",
+    "a competitive tennis player",
+    "a competitive business student"
   ]
+
+  useEffect(() => {
+    const updateText = setInterval(() => {
+      setCurTextIndex(curTextIndex => (curTextIndex + 1) % 5)
+    }, 1000)
+    return () => clearInterval(updateText)
+  }, []);
+
   return (
     <Box height={"100%"} width={"100%"}>
       <Center>
@@ -48,10 +58,8 @@ function HomePage() {
           </div>
           <div>
             <Text fontSize={"70px"}>
-            <Typist>a Full Stack Developer
-            </Typist>
+              <ReactRotatingText items={homeTypingText}/>
             </Text>
-
           </div>
         </HStack>
 
