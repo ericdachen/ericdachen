@@ -18,6 +18,7 @@ import {
   useColorModeValue,
   Stack,
   useColorMode,
+  keyframes
 } from "@chakra-ui/react";
 import ProfileModal from "../social-modal/ProfileModal";
 import { MoonIcon, SunIcon } from "@chakra-ui/icons";
@@ -43,13 +44,28 @@ const NavLink = ({ children }: { children: ReactNode }) => (
 function NavBar() {
   const { colorMode, toggleColorMode } = useColorMode();
   const { isOpen, onOpen, onClose } = useDisclosure();
+
+  const pulseRing = keyframes`
+	0% {
+    transform: scale(0.33);
+  }
+  40%,
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+	`;
+
   return (
     <>
       <Box
         position={"fixed"}
-        bg={useColorModeValue("gray.100", "gray.900")}
+        bg={useColorModeValue("teal.50", "blue.800")}
         px={4}
         width={"100%"}
+        zIndex={"100"}
       >
         <Flex h={16} alignItems={"center"} justifyContent={"space-between"}>
           <Modal
@@ -73,9 +89,19 @@ function NavBar() {
                 minW={0}
                 onClick={onOpen}
                 _hover={{ bg: useColorModeValue("gray.200", "gray.700") }}
-                marginTop={"50px"}
+                _before={{
+                  content: "''",
+                  position: 'absolute',
+                  display: 'block',
+                  width: '300%',
+                  height: '300%',
+                  boxSizing: 'border-box',
+                  borderRadius: '50%',
+                  bgColor: useColorModeValue("red.300", "red.200"),
+                  animation: `2.25s ${pulseRing} cubic-bezier(0.455, 0.03, 0.515, 0.955) -0.4s infinite`,
+                }}
               >
-                <Avatar size={"xl"} src={"headshot.JPG"} />
+                <Avatar size={"md"} src={"headshot.JPG"} />
               </MenuButton>{" "}
               <HStack
                 as={"nav"}
@@ -90,7 +116,7 @@ function NavBar() {
           </Menu>
           <Flex alignItems={"right"}>
             <Stack direction={"row"} spacing={7}>
-              <Button onClick={toggleColorMode}>
+              <Button onClick={toggleColorMode} bg={useColorModeValue("teal.100", "blue.700")}>
                 {colorMode === "light" ? "🌕" : "☀️"}
               </Button>
             </Stack>

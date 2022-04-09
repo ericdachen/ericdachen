@@ -30,7 +30,6 @@ var ReactRotatingText = require("react-rotating-text");
 
 
 function HomePage() {
-  const [curTextIndex, setCurTextIndex] = useState(0);
 
   const homeTypingText = [
     "a cs and business student",
@@ -40,31 +39,24 @@ function HomePage() {
     "a competitive business student"
   ]
 
-  useEffect(() => {
-    const updateText = setInterval(() => {
-      setCurTextIndex(curTextIndex => (curTextIndex + 1) % 5)
-    }, 1000)
-    return () => clearInterval(updateText)
-  }, []);
-
   return (
-    <Box height={"100%"} width={"100%"}>
-      <Center>
+    <Box height={"55vw"} width={"100vw"}>
+      <Center height={"60vw"} width={"100vw"}>
         <VStack>
-        <Heading fontSize={"100px"} >Eric Chen</Heading>
+        <Heading fontSize={"10vw"} >Eric Chen</Heading>
         <HStack>
           <div>
-          <Text fontSize={"70px"} paddingRight={"10px"}>I'm</Text>
+          <Text fontSize={"5vw"} paddingRight={"-0.1vw"}>I'm</Text>
           </div>
           <div>
-            <Text fontSize={"70px"}>
+            <Text fontSize={"5vw"}>
               <ReactRotatingText items={homeTypingText}/>
             </Text>
           </div>
         </HStack>
 
         </VStack>
-
+        <ParticlePage/>
       </Center>
 
     </Box>

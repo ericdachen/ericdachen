@@ -5,6 +5,8 @@ import styles from "../styles/Home.module.css";
 import NavBar from "../components/navbar/NavBar";
 import HomePage from "../components/home/Home";
 import ParticlePage from "../components/home/Particles";
+import ShowcasePage from "../components/showcase/Showcase";
+import { VStack } from "@chakra-ui/react";
 
 const Home: NextPage = () => {
   return (
@@ -21,10 +23,11 @@ const Home: NextPage = () => {
           />
           <link rel="icon" href="/favicon.ico" />
         </Head>
-
-        <main className={styles.main}>
+        <VStack>
         <HomePage></HomePage>
-        </main>
+        <ShowcasePage></ShowcasePage>
+        </VStack>
+
 
         <footer className={styles.footer}>
           <a

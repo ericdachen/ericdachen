@@ -22,11 +22,27 @@ import {
   useColorMode,
   Center,
   Text,
-  VStack
+  VStack,
+  LinkBox,
+  Image
 } from "@chakra-ui/react";
+import Head from "next/head";
 
-function ProjectBox() {
+function ProjectBox(props) {
+    function openProject() {
 
+    }
+    return (
+        <>
+        <LinkBox>
+        <Box height={"40em"} width={"20em"} onClick={openProject} bg={useColorModeValue("gray.400","gray.600")}>
+            <Image src='https://avatars.githubusercontent.com/u/54382303?v=4'/>
+        </Box>
+        </LinkBox>
+
+        
+        </>
+    );
 }
 
 export default ProjectBox;

@@ -1,4 +1,5 @@
 import Particles from "react-tsparticles";
+import { useState } from "react"
 import {
   Box,
   Flex,
@@ -21,14 +22,15 @@ import {
 } from "@chakra-ui/react";
 
 function ParticlePage() {
+
   return (
-    <Box maxHeight={"100%"} height={"100%"} width={"100%"} overflow={"hidden"}>
+    <Box maxHeight={"100%"} height={"100%"} width={"100%"} overflow={"hidden"} position={"fixed"} zIndex={"-10000000"} bg={useColorModeValue("white", "gray.600")}>
       <Particles
         id="tsparticles"
         options={{
           background: {
             color: {
-              value: "#0d47a1",
+              value: "curColour",
             },
           },
           fpsLimit: 120,
@@ -62,10 +64,10 @@ function ParticlePage() {
           },
           particles: {
             color: {
-              value: "#ffffff",
+              value: "#FFFFFF",
             },
             links: {
-              color: "#ffffff",
+              color: "#FFFFFF",
               distance: 150,
               enable: true,
               opacity: 0.5,
