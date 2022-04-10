@@ -24,25 +24,52 @@ import {
   Text,
   VStack,
   LinkBox,
-  Image
+  SlideFade,
+  ScaleFade,
+  Fade,
+  Image,
 } from "@chakra-ui/react";
 import Head from "next/head";
 
 function ProjectBox(props) {
-    function openProject() {
+  const { isOpen, onToggle } = useDisclosure();
 
-    }
-    return (
-        <>
-        <LinkBox>
-        <Box onClick={openProject} bg={useColorModeValue("gray.400","gray.600")}>
-            <Image height={"35em"} width={"20em"} objectFit={"cover"} src='UW.jpg'/>
-        </Box>
-        </LinkBox>
-
-        
-        </>
-    );
+  function openProject() {}
+  return (
+    <>
+      <Box
+        onClick={openProject}
+        bg={useColorModeValue("gray.400", "gray.600")}
+        zIndex={"0"}
+        height={"35em"}
+        width={"20em"}
+        rounded="20px"
+      >
+        <Fade in={isOpen} onHoverStart={onToggle} onHoverEnd={onToggle}>
+          <Box
+            height={"35em"}
+            width={"20em"}
+            rounded="20px"
+            position={"absolute"}
+            bg={"black"}
+            opacity={"0"}
+            zIndex={"1"}
+            transition={"transform .2s"}
+            _hover={{
+              opacity: 0.5,
+            }}
+          />
+        </Fade>
+        <Image
+          rounded="20px"
+          height={"35em"}
+          width={"20em"}
+          objectFit={"cover"}
+          src="UW.jpg"
+        />
+      </Box>
+    </>
+  );
 }
 
 export default ProjectBox;

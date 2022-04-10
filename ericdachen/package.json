@@ -18,7 +18,7 @@
     "react": "17.0.2",
     "react-dom": "17.0.2",
     "react-rotating-text": "^1.4.1",
-    "react-tsparticles": "^1.42.4"
+    "react-tsparticles": "^1.43.1"
   },
   "devDependencies": {
     "@types/node": "17.0.21",

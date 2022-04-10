@@ -22,43 +22,40 @@ import {
   useColorMode,
   Center,
   Text,
-  VStack
+  VStack,
 } from "@chakra-ui/react";
 import ParticlePage from "./Particles";
 var ReactRotatingText = require("react-rotating-text");
 
-
-
 function HomePage() {
-
   const homeTypingText = [
     "a cs and business student",
     "a Full-Stack developer",
     "a stock market enthusiast",
     "a competitive tennis player",
-    "a competitive business student"
-  ]
+    "a competitive business student",
+  ];
 
   return (
-    <Box height={"55vw"} width={"100vw"}>
-      <Center height={"60vw"} width={"100vw"}>
+    <Box height={"100vh"} width={"100vw"}>
+      <Center height={"100vh"} width={"100vw"}>
         <VStack>
-        <Heading fontSize={"10vw"} >Eric Chen</Heading>
-        <HStack>
-          <div>
-          <Text fontSize={"5vw"} paddingRight={"-0.1vw"}>I'm</Text>
-          </div>
-          <div>
-            <Text fontSize={"5vw"}>
-              <ReactRotatingText items={homeTypingText}/>
-            </Text>
-          </div>
-        </HStack>
-
+          <Heading fontSize={"10vw"}>Eric Chen</Heading>
+          <HStack>
+            <div>
+              <Text fontSize={"5vw"} paddingRight={"-0.1vw"}>
+                I'm
+              </Text>
+            </div>
+            <div>
+              <Text fontSize={"5vw"}>
+                <ReactRotatingText items={homeTypingText} />
+              </Text>
+            </div>
+          </HStack>
         </VStack>
-        <ParticlePage/>
+        <ParticlePage />
       </Center>
-
     </Box>
   );
 }
