@@ -65,7 +65,7 @@ function ProjectBox(props) {
           height={"35em"}
           width={"20em"}
           objectFit={"cover"}
-          src="UW.jpg"
+          src="small.jpeg"
         />
       </Box>
     </>

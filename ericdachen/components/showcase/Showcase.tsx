@@ -56,10 +56,16 @@ function ShowcasePage() {
             </VStack>
             <Wrap justify={"center"} spacing={"3vw"}>
               <WrapItem>
-                <ProjectBox boxlink="www.google.com"></ProjectBox>
+                <ProjectBox
+                  boxlink="www.google.com"
+                  imagelink="UW.jpg"
+                ></ProjectBox>
               </WrapItem>
               <WrapItem>
-                <ProjectBox boxlink="www.google.com"></ProjectBox>
+                <ProjectBox
+                  boxlink="www.google.com"
+                  imagelink="headshot.JPG"
+                ></ProjectBox>
               </WrapItem>
               <WrapItem>
                 <ProjectBox boxlink="www.google.com"></ProjectBox>
