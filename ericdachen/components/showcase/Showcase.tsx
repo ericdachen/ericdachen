@@ -44,14 +44,14 @@ function ShowcasePage() {
             <VStack spacing={"-0vw"}>
               <Text
                 fontSize={"5vw"}
-                color={useColorModeValue("red.300", "teal.100")}
+                color={useColorModeValue("red.300", "orange.200")}
               >
                 Showcase
               </Text>
               <Box
                 height={"0.5vw"}
                 width={"8vw"}
-                bg={useColorModeValue("red.300", "teal.100")}
+                bg={useColorModeValue("red.300", "orange.200")}
               />
             </VStack>
             <Wrap justify={"center"} spacing={"3vw"}>

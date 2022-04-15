@@ -74,14 +74,14 @@ function ParticlePage() {
                 quantity: 4,
               },
               repulse: {
-                distance: 300,
+                distance: 500,
                 duration: 0.4,
               },
             },
           },
           particles: {
             color: {
-              value: ["#B2F5EA", "#FEB2B2"],
+              value: [useColorModeValue("#B2F5EA", "#BB86FC"), useColorModeValue("#FEB2B2", "#FBD38D")]
             },
             links: {
               color: "#FFFFFF",
@@ -109,14 +109,14 @@ function ParticlePage() {
               value: 80,
             },
             opacity: {
-              value: 0.5,
+              value: 0.3,
             },
             shape: {
               type: "circle",
             },
             size: {
               random: true,
-              value: 40,
+              value: 100,
             },
           },
           detectRetina: true,

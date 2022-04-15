@@ -33,7 +33,7 @@ function HomePage() {
     "a Full-Stack developer",
     "a stock market enthusiast",
     "a competitive tennis player",
-    "a competitive business student",
+    "a competitive business student"
   ];
 
   return (
@@ -43,7 +43,7 @@ function HomePage() {
           <Heading fontSize={"10vw"}>Eric Chen</Heading>
           <HStack>
             <div>
-              <Text fontSize={"5vw"} paddingRight={"-0.1vw"}>
+              <Text fontSize={"5vw"} paddingRight={"0.5vw"}>
                 I'm
               </Text>
             </div>

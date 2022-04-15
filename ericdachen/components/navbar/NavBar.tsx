@@ -33,7 +33,7 @@ const NavLink = ({ children }: { children: ReactNode }) => (
     rounded={"md"}
     _hover={{
       textDecoration: "none",
-      color: useColorModeValue("red.300", "red.200"),
+      color: useColorModeValue("red.300", "orange.200"),
     }}
     href={"#"}
   >
@@ -97,7 +97,7 @@ function NavBar() {
                   height: "300%",
                   boxSizing: "border-box",
                   borderRadius: "50%",
-                  bgColor: useColorModeValue("red.300", "red.200"),
+                  bgColor: useColorModeValue("red.300", "orange.200"),
                   animation: `2.25s ${pulseRing} cubic-bezier(0.455, 0.03, 0.515, 0.955) -0.4s infinite`,
                 }}
               >
