@@ -15,7 +15,7 @@ Please feel free to contact me at erche3742@gmail.com
 
 **Frameworks:** React (Library), React-native, Angular, Flutter, Material-UI, Bootstrap, Jquery, gRPC, Kafka, RedShift, CircleCI, Airflow, Debezium
 
-**Tools:** Git, Figma, JIRA, Balsamiq, Microsoft Suite, Adobe Premiere, and After Effects
+**Tools:** Git, Figma, JIRA, Balsamiq, Microsoft Suite, Adobe Premiere, After Effects, Docker
 
 <!--
 **ericdachen/ericdachen** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
