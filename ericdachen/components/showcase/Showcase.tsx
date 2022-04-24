@@ -58,17 +58,17 @@ function ShowcasePage() {
               <WrapItem>
                 <ProjectBox
                   boxlink="www.google.com"
-                  imagelink="UW.jpg"
+                  imagelink="UW.jpeg"
                 ></ProjectBox>
               </WrapItem>
               <WrapItem>
                 <ProjectBox
                   boxlink="www.google.com"
-                  imagelink="headshot.JPG"
+                  imagelink="headshot.jpeg"
                 ></ProjectBox>
               </WrapItem>
               <WrapItem>
-                <ProjectBox boxlink="www.google.com"></ProjectBox>
+                <ProjectBox boxlink="www.google.com" imageLink="small.jpeg"></ProjectBox>
               </WrapItem>
             </Wrap>
             <br></br>
