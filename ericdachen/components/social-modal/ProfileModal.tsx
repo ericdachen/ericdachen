@@ -28,7 +28,7 @@ export default function SocialProfileSimple() {
         <ModalCloseButton marginLeft={"-10px"} marginBottom={"15px"} />
         <Avatar
           size={"xl"}
-          src={"headshot.jpg"}
+          src={"headshot.jpeg"}
           mb={4}
           pos={"relative"}
           _after={{

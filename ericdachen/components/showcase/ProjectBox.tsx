@@ -42,14 +42,14 @@ function ProjectBox(props) {
         onClick={openProject}
         bg={useColorModeValue("gray.400", "gray.600")}
         zIndex={"0"}
-        height={"35em"}
-        width={"20em"}
+        height={props.height}
+        width={props.width}
         rounded="20px"
       >
         <Fade in={isOpen} onHoverStart={onToggle} onHoverEnd={onToggle}>
           <Box
-            height={"35em"}
-            width={"20em"}
+            height={props.height}
+            width={props.width}
             rounded="20px"
             position={"absolute"}
             bg={"black"}
@@ -63,8 +63,8 @@ function ProjectBox(props) {
         </Fade>
         <Image
           rounded="20px"
-          height={"35em"}
-          width={"20em"}
+          height={props.height}
+          width={props.width}
           objectFit={"cover"}
           src={props.imageLink}
           alt="Image of showcase"

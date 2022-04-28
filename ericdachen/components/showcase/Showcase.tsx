@@ -1,5 +1,4 @@
 import React, { useState, ReactNode, useEffect } from "react";
-
 import {
   Box,
   Flex,
@@ -56,19 +55,15 @@ function ShowcasePage() {
             </VStack>
             <Wrap justify={"center"} spacing={"3vw"}>
               <WrapItem>
-                <ProjectBox
-                  boxlink="www.google.com"
-                  imagelink="UW.jpeg"
-                ></ProjectBox>
+                <ProjectBox boxlink="www.google.com" imagelink="UW.jpeg" height="30em" width="25em"></ProjectBox>
               </WrapItem>
               <WrapItem>
+                <VStack spacing={10}>
                 <ProjectBox
-                  boxlink="www.google.com"
-                  imagelink="headshot.jpeg"
-                ></ProjectBox>
-              </WrapItem>
-              <WrapItem>
-                <ProjectBox boxlink="www.google.com" imageLink="small.jpeg"></ProjectBox>
+                  boxlink="www.google.com" imagelink="headshot.jpeg" height="15em" width="25em"></ProjectBox>
+
+                <ProjectBox boxlink="www.google.com" imageLink="small.jpeg" height="20em" width="25em"></ProjectBox>
+                </VStack>
               </WrapItem>
             </Wrap>
             <br></br>
