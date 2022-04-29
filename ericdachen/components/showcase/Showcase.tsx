@@ -30,6 +30,8 @@ import Head from "next/head";
 import ProjectBox from "./ProjectBox";
 
 function ShowcasePage() {
+  const [page, setPage] = useState(0);
+
   return (
     <>
       <Box
@@ -52,6 +54,21 @@ function ShowcasePage() {
                 width={"8vw"}
                 bg={useColorModeValue("red.300", "orange.200")}
               />
+              <br></br>
+              <HStack spacing={3}>
+                <Button bgColor={useColorModeValue("red.300", "blue.300")}>
+                  Tech
+                </Button>
+                <Button bgColor={useColorModeValue("red.300", "blue.300")}>
+                  Entrepreneurship
+                </Button>
+                <Button bgColor={useColorModeValue("red.300", "blue.300")}>
+                  Community
+                </Button>
+                <Button bgColor={useColorModeValue("red.300", "blue.300")}>
+                  Experience
+                </Button>
+              </HStack>
             </VStack>
             <Wrap justify={"center"} spacing={"3vw"}>
               <WrapItem>

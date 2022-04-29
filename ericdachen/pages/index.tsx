@@ -7,40 +7,32 @@ import HomePage from "../components/home/Home";
 import ParticlePage from "../components/home/Particles";
 import ShowcasePage from "../components/showcase/Showcase";
 import { VStack } from "@chakra-ui/react";
+import Footer from "../components/footer/Footer";
 
 const Home: NextPage = () => {
   return (
     <>
       <NavBar></NavBar>
-    <div>
-      {/* <ParticlePage></ParticlePage> */}
-      <div className={styles.container}>
-        <Head>
-          <title>Eric Chen 🥳</title>
-          <meta
-            name="description"
-            content="This website belongs to ericdachen!"
-          />
-          <link rel="icon" href="/favicon.ico" />
-        </Head>
-        <VStack>
-        <HomePage></HomePage>
-        <ShowcasePage></ShowcasePage>
-        </VStack>
+      <div>
+        {/* <ParticlePage></ParticlePage> */}
+        <div className={styles.container}>
+          <Head>
+            <title>Eric Chen 🥳</title>
+            <meta
+              name="description"
+              content="This website belongs to ericdachen!"
+            />
+            <link rel="icon" href="/favicon.ico" />
+          </Head>
+          <VStack>
+            <HomePage></HomePage>
+            <ShowcasePage></ShowcasePage>
+          </VStack>
 
-
-        <footer className={styles.footer}>
-          <a
-            href="https://github.com/ericdachen/ericdachen"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Made with ❤️ with lots of 👨🏻‍💻 and ☕️{" "}
-          </a>
-        </footer>
+          <Footer />
+        </div>
       </div>
-    </div>
-  </>
+    </>
   );
 };
 
