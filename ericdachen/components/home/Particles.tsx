@@ -81,7 +81,10 @@ function ParticlePage() {
           },
           particles: {
             color: {
-              value: [useColorModeValue("#B2F5EA", "#BB86FC"), useColorModeValue("#FEB2B2", "#FBD38D")]
+              value: [
+                useColorModeValue("#FEFFC2", "#66FCF1"),
+                useColorModeValue("#FED2A5", "A7EE8C"),
+              ],
             },
             links: {
               color: "#FFFFFF",
@@ -162,7 +165,7 @@ const ParticlesPageV2 = () => {
               quantity: 4,
             },
             repulse: {
-              distance: 200,
+              distance: 100,
               duration: 0.4,
             },
           },

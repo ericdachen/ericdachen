@@ -59,7 +59,26 @@ function ProjectBox(props) {
             _hover={{
               opacity: 0.5,
             }}
-          />
+          >
+            <ScaleFade in={isOpen}>
+              <Box margin={"2em"}>
+              <Center>
+                <VStack>
+                <Heading color={useColorModeValue("white", "white")}>
+                  {props.heading}
+                </Heading>
+              <Text color={useColorModeValue("white", "white")} zIndex={5}>
+              {props.description}
+            </Text>
+                </VStack>
+
+                </Center>
+
+              </Box>
+
+            </ScaleFade>
+
+            </Box>
         </Fade>
         <Image
           rounded="20px"
