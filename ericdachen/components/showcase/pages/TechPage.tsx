@@ -27,7 +27,7 @@ import {
   WrapItem,
 } from "@chakra-ui/react";
 import Head from "next/head";
-import ProjectBox from "./ProjectBox";
+import ProjectBox from "../ProjectBox";
 
 function TechPage() {
   return (

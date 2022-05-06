@@ -28,12 +28,55 @@ import {
 } from "@chakra-ui/react";
 import Head from "next/head";
 import ProjectBox from "./ProjectBox";
-import TechPage from "./TechPage";
+import TechPage from "./pages/TechPage";
 
 function ShowcasePage() {
-  const [page, setPage] = useState(0);
+  const light = "red.300";
+  const dark = "blue.300";
+  const lightSelected = "red.100";
+  const darkSelected = "blue.100";
 
-  function handleClick(button) {}
+  const [curButton, setCurButton] = useState(0);
+  const [one, setOne] = useState([lightSelected, darkSelected]);
+  const [two, setTwo] = useState([light, dark]);
+  const [three, setThree] = useState([light, dark]);
+  const [four, setFour] = useState([light, dark]);
+
+  useEffect(() => {
+    if (curButton === 0) {
+      setOne([lightSelected, darkSelected]);
+      setTwo([light, dark]);
+      setThree([light, dark]);
+      setFour([light, dark]);
+    } else if (curButton === 1) {
+      setOne([light, dark]);
+      setTwo([lightSelected, darkSelected]);
+      setThree([light, dark]);
+      setFour([light, dark]);
+    } else if (curButton === 2) {
+      setOne([light, dark]);
+      setTwo([light, dark]);
+      setThree([lightSelected, darkSelected]);
+      setFour([light, dark]);
+    } else if (curButton === 3) {
+      setOne([light, dark]);
+      setTwo([light, dark]);
+      setThree([light, dark]);
+      setFour([lightSelected, darkSelected]);
+    }
+  }, [curButton]);
+
+  function handleClick(button) {
+    if (button === 0) {
+      setCurButton(0);
+    } else if (button === 1) {
+      setCurButton(1);
+    } else if (button === 2) {
+      setCurButton(2);
+    } else if (button === 3) {
+      setCurButton(3);
+    }
+  }
 
   return (
     <>
@@ -56,16 +99,36 @@ function ShowcasePage() {
           />
           <br></br>
           <HStack spacing={3}>
-            <Button bgColor={useColorModeValue("red.300", "blue.300")}>
+            <Button
+              _hover={{ background: useColorModeValue("red.100", "blue.100") }}
+              _active={{ background: useColorModeValue("red.100", "blue.100") }}
+              onClick={() => handleClick(0)}
+              bgColor={useColorModeValue(one[0], one[1])}
+            >
               Tech
             </Button>
-            <Button bgColor={useColorModeValue("red.300", "blue.300")}>
+            <Button
+              _hover={{ background: useColorModeValue("red.100", "blue.100") }}
+              _active={{ background: useColorModeValue("red.100", "blue.100") }}
+              onClick={() => handleClick(1)}
+              bgColor={useColorModeValue(two[0], two[1])}
+            >
               Entrepreneurship
             </Button>
-            <Button bgColor={useColorModeValue("red.300", "blue.300")}>
+            <Button
+              _hover={{ background: useColorModeValue("red.100", "blue.100") }}
+              _active={{ background: useColorModeValue("red.100", "blue.100") }}
+              onClick={() => handleClick(2)}
+              bgColor={useColorModeValue(three[0], three[1])}
+            >
               Community
             </Button>
-            <Button bgColor={useColorModeValue("red.300", "blue.300")}>
+            <Button
+              _hover={{ background: useColorModeValue("red.100", "blue.100") }}
+              _active={{ background: useColorModeValue("red.100", "blue.100") }}
+              onClick={() => handleClick(3)}
+              bgColor={useColorModeValue(four[0], four[1])}
+            >
               Experience
             </Button>
           </HStack>
