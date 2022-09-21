@@ -34,7 +34,7 @@ import Head from "next/head";
 function ProjectBox(props) {
   const { isOpen, onToggle } = useDisclosure();
 
-  console.log(props)
+  console.log(props);
   function openProject() {}
   return (
     <>
@@ -57,36 +57,41 @@ function ProjectBox(props) {
             zIndex={"1"}
             transition={"transform .2s"}
             _hover={{
-              opacity: 0.5,
+              opacity: 0.7,
             }}
           >
             <ScaleFade in={isOpen}>
               <Box margin={"2em"}>
-              <Center>
-                <VStack>
-                <Heading color={useColorModeValue("white", "white")}>
-                  {props.heading}
-                </Heading>
-              <Text color={useColorModeValue("white", "white")} zIndex={5}>
-              {props.description}
-            </Text>
-                </VStack>
-
+                <Center>
+                  <VStack>
+                    <Text
+                      fontSize={"3xl"}
+                      fontWeight={"bold"}
+                      color={useColorModeValue("white", "white")}
+                    >
+                      {props.heading}
+                    </Text>
+                    <Text
+                      color={useColorModeValue("white", "white")}
+                      zIndex={5}
+                    >
+                      {props.description}
+                    </Text>
+                  </VStack>
                 </Center>
-
               </Box>
-
             </ScaleFade>
-
-            </Box>
+          </Box>
         </Fade>
         <Image
           rounded="20px"
           height={props.height}
           width={props.width}
-          objectFit={"cover"}
+          objectFit={props.fit}
           src={props.imageLink}
           alt="Image of showcase"
+          align={props.align}
+          bgColor={useColorModeValue("white", "white")}
         />
       </Box>
     </>
