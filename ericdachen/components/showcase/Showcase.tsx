@@ -27,8 +27,11 @@ import {
   WrapItem,
 } from "@chakra-ui/react";
 import Head from "next/head";
-import ProjectBox from "./ProjectBox";
+import ProjectBox from "./pages/showcaseComponents/ProjectBox";
 import TechPage from "./pages/TechPage";
+import ExpPage from "./pages/ExpPage";
+import EntrePage from "./pages/EntrePage";
+import CommPage from "./pages/CommunityPage";
 
 function ShowcasePage() {
   const light = "red.300";
@@ -132,7 +135,10 @@ function ShowcasePage() {
               Experience
             </Button>
           </HStack>
-          <TechPage />
+          {curButton === 0 ? <TechPage /> : <></>}
+          {curButton === 1 ? <EntrePage /> : <></>}
+          {curButton === 2 ? <CommPage /> : <></>}
+          {curButton === 3 ? <ExpPage /> : <></>}
         </VStack>
       </Box>
     </>

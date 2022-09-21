@@ -29,7 +29,7 @@ import {
 import Head from "next/head";
 import ProjectBox from "./showcaseComponents/ProjectBox";
 
-function TechPage() {
+function ExpPage() {
   return (
     <>
       <br></br>
@@ -37,47 +37,29 @@ function TechPage() {
         <VStack spacing={"3vw"}>
           <Wrap justify={"center"} spacing={"3vw"}>
             <WrapItem>
-              <VStack spacing={10}>
-                <ProjectBox
-                  boxlink="www.google.com"
-                  imageLink="/headshot.jpeg"
-                  height="50em"
-                  width="25em"
-                  heading="Carta"
-                  description="Worked on RBC"
-                ></ProjectBox>
-                <ProjectBox
-                  boxlink="www.google.com"
-                  imageLink="/headshot.jpeg"
-                  height="30em"
-                  width="25em"
-                  heading="Carta"
-                  description="Worked on RBC"
-                ></ProjectBox>
-              </VStack>
+              <ProjectBox
+                boxlink="www.google.com"
+                imagelink="UW.jpeg"
+                height="30em"
+                width="25em"
+                heading="JDCC Laurier"
+                description="Trained for 4 months with the JDCC Laurier team to compete against 10 other universities in a 3 hour business case competition."
+              ></ProjectBox>
             </WrapItem>
             <WrapItem>
               <VStack spacing={10}>
                 <ProjectBox
                   boxlink="www.google.com"
-                  imageLink="/headshot.jpeg"
-                  height="30em"
+                  imagelink="headshot.jpeg"
+                  height="15em"
                   width="25em"
                   heading="Carta"
-                  description="Worked on RBC"
+                  description="Worked as an infrastructure engineer for Carta!"
                 ></ProjectBox>
 
                 <ProjectBox
                   boxlink="www.google.com"
-                  imageLink="/small.jpeg"
-                  height="20em"
-                  width="25em"
-                  heading="RBC"
-                  description="Worked on RBC"
-                ></ProjectBox>
-                <ProjectBox
-                  boxlink="www.google.com"
-                  imageLink="/small.jpeg"
+                  imageLink="small.jpeg"
                   height="20em"
                   width="25em"
                   heading="RBC"
@@ -93,4 +75,4 @@ function TechPage() {
   );
 }
 
-export default TechPage;
+export default ExpPage;
