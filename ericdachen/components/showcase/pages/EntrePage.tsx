@@ -40,22 +40,17 @@ function EntrePage() {
               <VStack spacing={10}>
                 <ProjectBox
                   boxlink="www.google.com"
-                  imageLink="/ht6eric.png"
-                  height="35em"
+                  imageLink="/jdcc2.png"
+                  fit="cover"
+                  align="65% 50%"
+                  height="20em"
                   width="25em"
-                  heading="Hack the 6ix     Co-chair"
+                  heading="JDCC Laurier"
                   description="
-                      Highlights:
-                      1,300+ applications,
-                      700+ hackers from 26 different countries,
-                      20+ workshops and events,
-                      99 projects submitted, &
-                      1 unforgettable event!!
-    
-                      Over the past year, I had the opportunity to serve as a Co-chair of Hack the 6ix and had the change to host Hack the 6ix 2021! I am feeling incredibly proud of both the growth I’ve seen in myself throughout this journey as well the entire Hack the 6ix team!
-    
-                      Starting out as a business development executive and transitioning into the position of Co-chair of Hack the 6ix was definitely a challenge especially since I was only in my sophomore year of Computer Science and Business Administration at the University of Waterloo , but I’m so thankful for the leadership, organization, and networking skills I’ve developed through this experience!
-                      "
+                  Represented the JDCC Laurier Case Competition team as an International Business Delegate!
+                  I analyzed business cases, prepared solutions, and delivered presentations all within the span of 3 hours.
+                  This was a year-long training process leading up to a competition against 10 other schools leading to an overall 
+                  placement of 3rd place for Laurier!"
                 ></ProjectBox>
                 <ProjectBox
                   boxlink="www.google.com"

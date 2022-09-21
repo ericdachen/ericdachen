@@ -57,11 +57,12 @@ function TechPage() {
                 ></ProjectBox>
                 <ProjectBox
                   boxlink="www.google.com"
-                  imageLink="/cartalogo.png"
-                  height="30em"
+                  imageLink="/questionMark.png"
+                  height="25em"
                   width="25em"
-                  heading="Carta Back-end & Infrastructure Engineer"
-                  description="Worked on RBC"
+                  fit="cover"
+                  heading="Could be you?"
+                  description="I'm actively looking for an internship for Winter 2023 and Summer 2023! If you are on this page, I'd love to stay in touch with you. All my contact information can be found at the bottom of this page 🤩"
                 ></ProjectBox>
               </VStack>
             </WrapItem>
@@ -91,14 +92,6 @@ function TechPage() {
                   At the same time, I also developed accessible data visualizations using React.js and Node.js generating over 500,000+ unique page views in less than one month 
                   during the peak of the pandemic.
                   Furthermore, I built a Gitlab CI/CD pipeline to automatically deploy to Firebase and implemented Agile methodology to rapidly iterate the prototype by conducting usability tests with 20+ program stakeholders and clients"
-                ></ProjectBox>
-                <ProjectBox
-                  boxlink="www.google.com"
-                  imageLink="/small.jpeg"
-                  height="20em"
-                  width="25em"
-                  heading="RBC"
-                  description="Worked on RBC"
                 ></ProjectBox>
               </VStack>
             </WrapItem>

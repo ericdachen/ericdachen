@@ -108,7 +108,7 @@ function ShowcasePage() {
               onClick={() => handleClick(0)}
               bgColor={useColorModeValue(one[0], one[1])}
             >
-              Tech
+              Internships
             </Button>
             <Button
               _hover={{ background: useColorModeValue("red.100", "blue.100") }}
@@ -132,7 +132,7 @@ function ShowcasePage() {
               onClick={() => handleClick(3)}
               bgColor={useColorModeValue(four[0], four[1])}
             >
-              Experience
+              Projects
             </Button>
           </HStack>
           {curButton === 0 ? <TechPage /> : <></>}
