@@ -57,8 +57,8 @@ function EntrePage() {
                   imageLink="/headshot.jpeg"
                   height="30em"
                   width="25em"
-                  heading="Carta"
-                  description="Worked on RBC"
+                  heading="Changemaker Innovation Challenge 2020"
+                  description="Developed"
                 ></ProjectBox>
               </VStack>
             </WrapItem>
