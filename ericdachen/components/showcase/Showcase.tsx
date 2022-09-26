@@ -82,7 +82,7 @@ function ShowcasePage() {
   }
 
   return (
-    <>
+    <a id="Showcase">
       <Box
         minH={"100vh"}
         minW={"100vw"}
@@ -141,7 +141,7 @@ function ShowcasePage() {
           {curButton === 3 ? <ExpPage /> : <></>}
         </VStack>
       </Box>
-    </>
+    </a>
   );
 }
 

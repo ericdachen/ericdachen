@@ -43,7 +43,7 @@ function ExpPage() {
                   imageLink="/ht6eric.png"
                   height="35em"
                   width="25em"
-                  heading="Hack the 6ix     Co-chair"
+                  heading="Hack the North 2021 - Traffa"
                   description="
                       Highlights:
                       1,300+ applications,
@@ -62,8 +62,21 @@ function ExpPage() {
                   imageLink="/headshot.jpeg"
                   height="30em"
                   width="25em"
-                  heading="Carta"
+                  heading="StarterHacks 2019 - Interview Prep App"
                   description="Worked on RBC"
+                ></ProjectBox>
+                <ProjectBox
+                  boxlink="www.google.com"
+                  imageLink="/headshot.jpeg"
+                  height="25em"
+                  width="25em"
+                  heading="My Website"
+                  description="This website was made with love using Chakra UI and Next.js because
+                  I'd heard great things about Chakra UI as a framework and wanted to try it instead
+                  of the typical Bootstrap and MaterialUI both of which I've used before as well. From ideation
+                  to design to execution I had a blast getting to test my design skill and ability (or lack thereof) to group components
+                  on Figma in addition to trying out this new framework! I have
+                  to say that making this website was actually very fun and I enjoyed it very much!"
                 ></ProjectBox>
               </VStack>
             </WrapItem>
@@ -74,7 +87,7 @@ function ExpPage() {
                   imageLink="/headshot.jpeg"
                   height="30em"
                   width="25em"
-                  heading="Carta"
+                  heading="TOHacks 2021 - Shipmates"
                   description="Worked on RBC"
                 ></ProjectBox>
 
@@ -83,7 +96,7 @@ function ExpPage() {
                   imageLink="/small.jpeg"
                   height="20em"
                   width="25em"
-                  heading="RBC"
+                  heading="RBC Battlesnake Competition"
                   description="Worked on RBC"
                 ></ProjectBox>
                 <ProjectBox
@@ -91,8 +104,8 @@ function ExpPage() {
                   imageLink="/small.jpeg"
                   height="20em"
                   width="25em"
-                  heading="RBC"
-                  description="Worked on RBC"
+                  heading="Ontario Autism Program"
+                  description="Ontario Autism Program"
                 ></ProjectBox>
               </VStack>
             </WrapItem>

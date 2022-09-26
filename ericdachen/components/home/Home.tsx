@@ -30,33 +30,36 @@ var ReactRotatingText = require("react-rotating-text");
 function HomePage() {
   const homeTypingText = [
     "a cs and business student",
+    "a debater",
     "a Full-Stack developer",
+    "a tennis and golf lover",
+    "an entrepreneur at heart",
     "a stock market enthusiast",
-    "a competitive tennis player",
-    "a competitive business student"
   ];
 
   return (
-    <Box height={"100vh"} width={"100vw"}>
-      <Center height={"100vh"} width={"100vw"}>
-        <VStack>
-          <Heading fontSize={"10vw"}>Eric Chen</Heading>
-          <HStack>
-            <div>
-              <Text fontSize={"5vw"} paddingRight={"0.5vw"}>
-                I'm
-              </Text>
-            </div>
-            <div>
-              <Text fontSize={"5vw"}>
-                <ReactRotatingText items={homeTypingText} />
-              </Text>
-            </div>
-          </HStack>
-        </VStack>
-        <ParticlePage />
-      </Center>
-    </Box>
+    <a id="Home">
+      <Box height={"100vh"} width={"100vw"}>
+        <Center height={"100vh"} width={"100vw"}>
+          <VStack>
+            <Heading fontSize={"10vw"}>Hi! I'm Eric 🤩</Heading>
+            <HStack>
+              <div>
+                <Text fontSize={"5vw"} paddingRight={"0.5vw"}>
+                  I'm
+                </Text>
+              </div>
+              <div>
+                <Text fontSize={"5vw"}>
+                  <ReactRotatingText items={homeTypingText} />
+                </Text>
+              </div>
+            </HStack>
+          </VStack>
+          <ParticlePage />
+        </Center>
+      </Box>
+    </a>
   );
 }
 

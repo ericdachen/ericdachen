@@ -23,10 +23,10 @@ import {
 import ProfileModal from "../social-modal/ProfileModal";
 import { MoonIcon, SunIcon } from "@chakra-ui/icons";
 
-const Links = ["Home", "Showcase", "Contact", "Resume"];
+const Links = ["Home", "Showcase", "Contact"];
 // const finalRef = React.useRef();
 
-const NavLink = ({ children }: { children: ReactNode }) => (
+const NavLink = ({ children, a }: { children: ReactNode; a: string }) => (
   <Link
     px={2}
     py={1}
@@ -35,7 +35,7 @@ const NavLink = ({ children }: { children: ReactNode }) => (
       textDecoration: "none",
       color: useColorModeValue("red.300", "orange.200"),
     }}
-    href={"#"}
+    href={"#" + a}
   >
     {children}
   </Link>
@@ -109,8 +109,22 @@ function NavBar() {
                 display={{ base: "none", md: "flex" }}
               >
                 {Links.map((link) => (
-                  <NavLink key={link}>{link}</NavLink>
+                  <NavLink key={link} a={link}>
+                    {link}
+                  </NavLink>
                 ))}
+                <Link
+                  px={2}
+                  py={1}
+                  rounded={"md"}
+                  _hover={{
+                    textDecoration: "none",
+                    color: useColorModeValue("red.300", "orange.200"),
+                  }}
+                  href={"/EricChenResumeFall2022.pdf"}
+                >
+                  Resume
+                </Link>
               </HStack>
             </HStack>
           </Menu>

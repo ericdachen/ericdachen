@@ -60,11 +60,24 @@ function CommPage() {
                 ></ProjectBox>
                 <ProjectBox
                   boxlink="www.google.com"
-                  imageLink="/headshot.jpeg"
-                  height="30em"
+                  imageLink="/speakup.jpeg"
+                  height="27em"
+                  align="65% 50%"
                   width="25em"
-                  heading="Blah"
-                  description="Worked on RBC"
+                  heading="SpeakUp Debate Workshops"
+                  fit="cover"
+                  description="Through the SpeakUp Government Grant funded by the Ontario Ministry of Education by single-handedly organizing and hosting a debate workshop and tournament for middle school students across the Wellington District to encourage them to engage in debating in the future. I secured a $1,250 provincial government grant from SpeakUp Student Voice project and I organized and planned all aspects of the event ranging from the itinerary to the budget expenses. "
+                ></ProjectBox>
+                <ProjectBox
+                  boxlink="www.google.com"
+                  imageLink="/ambassador.png"
+                  height="18em"
+                  align="0% 50%"
+                  width="25em"
+                  heading="University of Waterloo Math Ambassador"
+                  fit="cover"
+                  description="Hosted hundreds of University of Waterloo potential students to a Fall open house where I helped guide and give
+                  advice on applying and promoting the various programs available through the Math Faculty. "
                 ></ProjectBox>
               </VStack>
             </WrapItem>
@@ -91,15 +104,17 @@ function CommPage() {
                   width="25em"
                   fit="cover"
                   heading="Tedx Event Coordinator"
-                  description="Worked on RBC"
+                  description="As the event coordinator for the Tedx Youth at Guelph 2018 event, I spearheaded the operations of the event ranging from the entire design and layout of the event to the promotional items that were distributed including branding and logo design. Tedx Youth at Guelph every year hosts over 100 students from across the Wellington District to listen to inspirational speakers that teach youth in our community how to create meaningful change within their communities. This is an event focused on inspiring and providing tools for youth in our community to make a change."
                 ></ProjectBox>
                 <ProjectBox
                   boxlink="www.google.com"
-                  imageLink="/small.jpeg"
-                  height="20em"
+                  imageLink="/gghorg.jpeg"
+                  height="23em"
                   width="25em"
-                  heading="RBC"
-                  description="Worked on RBC"
+                  fit="contain"
+                  heading="Guelph General Hospital Inpatient Volunteer"
+                  description="I volunteered at the Guelph General Hospital for 2 years as an Inpatient volunteer!
+                  At the hospital I was tasked with helping to create a friendly environment for patients recovering from surgery or being prepped by offering social support and emotional support resources for these patients."
                 ></ProjectBox>
               </VStack>
             </WrapItem>
