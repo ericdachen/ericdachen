@@ -40,43 +40,23 @@ function ExpPage() {
               <VStack spacing={10}>
                 <ProjectBox
                   boxlink="www.google.com"
-                  imageLink="/ht6eric.png"
-                  height="35em"
+                  imageLink="/traffa.png"
+                  fit="cover"
+                  height="27em"
                   width="25em"
-                  heading="Hack the North 2021 - Traffa"
+                  heading="Hack the North 2020 - Traffa"
                   description="
-                      Highlights:
-                      1,300+ applications,
-                      700+ hackers from 26 different countries,
-                      20+ workshops and events,
-                      99 projects submitted, &
-                      1 unforgettable event!!
-    
-                      Over the past year, I had the opportunity to serve as a Co-chair of Hack the 6ix and had the change to host Hack the 6ix 2021! I am feeling incredibly proud of both the growth I’ve seen in myself throughout this journey as well the entire Hack the 6ix team!
-    
-                      Starting out as a business development executive and transitioning into the position of Co-chair of Hack the 6ix was definitely a challenge especially since I was only in my sophomore year of Computer Science and Business Administration at the University of Waterloo , but I’m so thankful for the leadership, organization, and networking skills I’ve developed through this experience!
+                  Interactions at in-person coffee chats and networking events are often spontaneous and random, so we wanted to be able to deliver that experience and value with traffa. Our app eradicates the barriers associated with communication and relationship building during a period of social isolation; it provides a simple and accessible way for everyone to spark and foster meaningful connections. Made with Bootstrap, React.js, NodeJS, Vonage API, & Express websockets.
                       "
                 ></ProjectBox>
                 <ProjectBox
                   boxlink="www.google.com"
-                  imageLink="/headshot.jpeg"
-                  height="30em"
-                  width="25em"
-                  heading="StarterHacks 2019 - Interview Prep App"
-                  description="Worked on RBC"
-                ></ProjectBox>
-                <ProjectBox
-                  boxlink="www.google.com"
-                  imageLink="/headshot.jpeg"
+                  imageLink="/interview.png"
+                  fit="contain"
                   height="25em"
                   width="25em"
-                  heading="My Website"
-                  description="This website was made with love using Chakra UI and Next.js because
-                  I'd heard great things about Chakra UI as a framework and wanted to try it instead
-                  of the typical Bootstrap and MaterialUI both of which I've used before as well. From ideation
-                  to design to execution I had a blast getting to test my design skill and ability (or lack thereof) to group components
-                  on Figma in addition to trying out this new framework! I have
-                  to say that making this website was actually very fun and I enjoyed it very much!"
+                  heading="StarterHacks 2020 - Interview Prep App"
+                  description="Cali || bust takes your resume and using Google Cloud Vision and Google Cloud NLP APIS, develops customized interview questions tailored to you based on your experience and skills! Then based on these interview questions you are able to record yourself answering these questions, allowing you to critique your own interviewing skills. Built with Google Cloud Vision & NLP, and React Native! "
                 ></ProjectBox>
               </VStack>
             </WrapItem>
@@ -84,32 +64,52 @@ function ExpPage() {
               <VStack spacing={10}>
                 <ProjectBox
                   boxlink="www.google.com"
-                  imageLink="/headshot.jpeg"
-                  height="30em"
+                  imageLink="/shipmates.png"
+                  fit="contain"
+                  align="50% 50%"
+                  height="27em"
                   width="25em"
                   heading="TOHacks 2021 - Shipmates"
-                  description="Worked on RBC"
+                  description="The carbon footprint of individually mailed packages from the packaging and environmental cost of individually transporting items is too high. Shipmates is 
+                  a mobile app that allows nearby individuals to group online orders into one shipment to reduce their carbon footprint, split the cost of shipping, and save money through bulk purchasing. Made with Flutter, MaterialUI, MobX, Express, Axios, & DataStax and submitted to TOHacks 2021!"
                 ></ProjectBox>
 
                 <ProjectBox
                   boxlink="www.google.com"
-                  imageLink="/small.jpeg"
-                  height="20em"
+                  imageLink="/battlesnake.jpeg"
+                  height="25em"
                   width="25em"
+                  fit="contain"
                   heading="RBC Battlesnake Competition"
-                  description="Worked on RBC"
-                ></ProjectBox>
-                <ProjectBox
-                  boxlink="www.google.com"
-                  imageLink="/small.jpeg"
-                  height="20em"
-                  width="25em"
-                  heading="Ontario Autism Program"
-                  description="Ontario Autism Program"
+                  description="A Battlesnake is a snake controlled by a web server API I built that responded to a snake board and generated a move in response to the position of other battlesnakes. Battlesnakes move to find food, avoid others, and stay alive! I created a Battlesnake using TypeScript with an A-star pathfinding algorithm logic to compete in an RBC Battlesnake tournament!"
                 ></ProjectBox>
               </VStack>
             </WrapItem>
           </Wrap>
+          <ProjectBox
+            boxlink="www.google.com"
+            imageLink="/headshot.jpeg"
+            height="25em"
+            width="53em"
+            heading="My Website"
+            description="This website was made with love using Chakra UI and Next.js because
+                  I'd heard great things about Chakra UI as a framework and wanted to try it instead
+                  of the typical Bootstrap and MaterialUI both of which I've used before as well. From ideation
+                  to design to execution I had a blast getting to test my design skill and ability (or lack thereof) to group components
+                  on Figma in addition to trying out this new framework! I have
+                  to say that making this website was actually very fun and I enjoyed it very much!"
+          ></ProjectBox>
+          <ProjectBox
+            boxlink="www.google.com"
+            imageLink="/oap.png"
+            height="30em"
+            align="50% 60%"
+            fit="cover"
+            width="53em"
+            heading="Ontario Autism Program"
+            description="I developed and coded a high-fidelity functional prototype using React, node.js, and Firebase CLI for the Ontario Autism Program. I developed a web portal that would allow families to easily apply for funding to reduce wait times, increase client communication, and create an overall better user experience. Through this project, I learned how to set up Gitlab CI/CD, Firebase hosting, and cloud firestore functions. Furthermore, I conducted user interviews with stakeholders/clients of OAP to inform the development of the prototype. After developing the web application, I conducted usability testing and iterated upon the app using Agile SDLC methodology.
+            Furthermore, I delivered bi-weekly presentations of our work to stakeholders and executives across various government ministries including the Treasury Board Secretariat and Ministry of Government and Consumer Services.             "
+          ></ProjectBox>
           <br></br>
         </VStack>
       </Center>
