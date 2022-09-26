@@ -42,11 +42,11 @@ function HomePage() {
       <Box height={"100vh"} width={"100vw"}>
         <Center height={"100vh"} width={"100vw"}>
           <VStack>
-            <Heading fontSize={"10vw"}>Hi! I&#39m Eric 🤩</Heading>
+            <Heading fontSize={"10vw"}>Hi! I`&#39`m Eric 🤩</Heading>
             <HStack>
               <div>
                 <Text fontSize={"5vw"} paddingRight={"0.5vw"}>
-                  I&#39m
+                  I`&39`m
                 </Text>
               </div>
               <div>
