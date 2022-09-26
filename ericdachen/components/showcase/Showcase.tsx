@@ -1,6 +1,5 @@
 import React, { useState, ReactNode, useEffect } from "react";
 import {
-  Collapse,
   SlideFade,
   Fade,
   Box,

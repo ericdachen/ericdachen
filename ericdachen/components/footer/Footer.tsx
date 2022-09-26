@@ -34,7 +34,7 @@ function Footer() {
     <a id="Contact">
       <footer className={styles.footer}>
         <VStack>
-          <Heading>Let's keep in touch!</Heading>
+          <Heading>Let&#39s keep in touch!</Heading>
           {useColorModeValue("#FFFFFF", "#000000") === "#000000" ? (
             <HStack spacing={4}>
               <Link href="https://github.com/ericdachen" isExternal>
