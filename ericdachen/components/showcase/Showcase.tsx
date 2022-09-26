@@ -1,5 +1,8 @@
 import React, { useState, ReactNode, useEffect } from "react";
 import {
+  Collapse,
+  SlideFade,
+  Fade,
   Box,
   Flex,
   Avatar,
@@ -25,6 +28,7 @@ import {
   Divider,
   Wrap,
   WrapItem,
+  Collapse,
 } from "@chakra-ui/react";
 import Head from "next/head";
 import ProjectBox from "./pages/showcaseComponents/ProjectBox";
@@ -34,10 +38,10 @@ import EntrePage from "./pages/EntrePage";
 import CommPage from "./pages/CommunityPage";
 
 function ShowcasePage() {
-  const light = "red.300";
-  const dark = "blue.300";
-  const lightSelected = "red.100";
-  const darkSelected = "blue.100";
+  const light = "red.100";
+  const dark = "purple.200";
+  const lightSelected = "red.200";
+  const darkSelected = "purple.300";
 
   const [curButton, setCurButton] = useState(0);
   const [one, setOne] = useState([lightSelected, darkSelected]);
@@ -91,54 +95,87 @@ function ShowcasePage() {
         <VStack spacing={"-0vw"}>
           <Text
             fontSize={"8vw"}
-            color={useColorModeValue("red.300", "orange.200")}
+            color={useColorModeValue("red.200", "purple.200")}
           >
             Showcase
           </Text>
           <Box
             height={"0.5vw"}
             width={"8vw"}
-            bg={useColorModeValue("red.300", "orange.200")}
+            bg={useColorModeValue("red.200", "purple.200")}
           />
           <br></br>
           <HStack spacing={3}>
             <Button
-              _hover={{ background: useColorModeValue("red.100", "blue.100") }}
-              _active={{ background: useColorModeValue("red.100", "blue.100") }}
+              _hover={{
+                background: useColorModeValue("red.200", "purple.300"),
+              }}
+              _active={{
+                background: useColorModeValue("red.200", "purple.200"),
+              }}
               onClick={() => handleClick(0)}
               bgColor={useColorModeValue(one[0], one[1])}
             >
               Internships
             </Button>
             <Button
-              _hover={{ background: useColorModeValue("red.100", "blue.100") }}
-              _active={{ background: useColorModeValue("red.100", "blue.100") }}
-              onClick={() => handleClick(1)}
-              bgColor={useColorModeValue(two[0], two[1])}
-            >
-              Entrepreneurship
-            </Button>
-            <Button
-              _hover={{ background: useColorModeValue("red.100", "blue.100") }}
-              _active={{ background: useColorModeValue("red.100", "blue.100") }}
+              _hover={{
+                background: useColorModeValue("red.200", "purple.300"),
+              }}
+              _active={{
+                background: useColorModeValue("red.200", "purple.300"),
+              }}
               onClick={() => handleClick(2)}
               bgColor={useColorModeValue(three[0], three[1])}
             >
               Community
             </Button>
             <Button
-              _hover={{ background: useColorModeValue("red.100", "blue.100") }}
-              _active={{ background: useColorModeValue("red.100", "blue.100") }}
+              _hover={{ background: useColorModeValue("red.200", "blue.200") }}
+              _active={{ background: useColorModeValue("red.200", "blue.200") }}
+              onClick={() => handleClick(1)}
+              bgColor={useColorModeValue(two[0], two[1])}
+            >
+              Entrepreneurship
+            </Button>
+
+            <Button
+              _hover={{ background: useColorModeValue("red.200", "blue.200") }}
+              _active={{ background: useColorModeValue("red.200", "blue.200") }}
               onClick={() => handleClick(3)}
               bgColor={useColorModeValue(four[0], four[1])}
             >
               Projects
             </Button>
           </HStack>
-          {curButton === 0 ? <TechPage /> : <></>}
-          {curButton === 1 ? <EntrePage /> : <></>}
-          {curButton === 2 ? <CommPage /> : <></>}
-          {curButton === 3 ? <ExpPage /> : <></>}
+          {curButton === 0 ? (
+            <SlideFade in={curButton === 0} offsetY="20px">
+              <TechPage />
+            </SlideFade>
+          ) : (
+            <></>
+          )}
+          {curButton === 1 ? (
+            <SlideFade in={curButton === 1} offsetY="20px">
+              <EntrePage />
+            </SlideFade>
+          ) : (
+            <></>
+          )}
+          {curButton === 2 ? (
+            <SlideFade in={curButton === 2} offsetY="20px">
+              <CommPage />
+            </SlideFade>
+          ) : (
+            <></>
+          )}
+          {curButton === 3 ? (
+            <SlideFade in={curButton === 3} offsetY="20px">
+              <ExpPage />
+            </SlideFade>
+          ) : (
+            <></>
+          )}
         </VStack>
       </Box>
     </a>

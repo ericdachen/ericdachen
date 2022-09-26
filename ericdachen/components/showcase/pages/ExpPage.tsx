@@ -88,7 +88,9 @@ function ExpPage() {
           </Wrap>
           <ProjectBox
             boxlink="www.google.com"
-            imageLink="/headshot.jpeg"
+            imageLink="/website2.gif"
+            fit="cover"
+            align="50% 0%"
             height="25em"
             width="53em"
             heading="My Website"
@@ -102,8 +104,8 @@ function ExpPage() {
           <ProjectBox
             boxlink="www.google.com"
             imageLink="/oap.png"
-            height="30em"
-            align="50% 60%"
+            height="25em"
+            align="50% 0%"
             fit="cover"
             width="53em"
             heading="Ontario Autism Program"

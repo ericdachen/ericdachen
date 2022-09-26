@@ -37,45 +37,57 @@ function Footer() {
           <Heading>Let's keep in touch!</Heading>
           {useColorModeValue("#FFFFFF", "#000000") === "#000000" ? (
             <HStack spacing={4}>
-              <Image
-                height="2.1em"
-                width="2.1em"
-                src="github-white.png"
-                alt="Icon"
-              />
-              <Image
-                height="2.2em"
-                width="2.2em"
-                src="email-white.png"
-                alt="Icon"
-              />
-              <Image
-                height="2.1em"
-                width="2.1em"
-                src="linkedin-white.png"
-                alt="Icon"
-              />
+              <Link href="https://github.com/ericdachen" isExternal>
+                <Image
+                  height="2.1em"
+                  width="2.1em"
+                  src="github-white.png"
+                  alt="Icon"
+                />
+              </Link>
+              <Link href="mailto:e56chen@uwaterloo.ca" isExternal>
+                <Image
+                  height="2.2em"
+                  width="2.2em"
+                  src="email-white.png"
+                  alt="Icon"
+                />
+              </Link>
+              <Link href="https://www.linkedin.com/in/ericdachen/" isExternal>
+                <Image
+                  height="2.1em"
+                  width="2.1em"
+                  src="linkedin-white.png"
+                  alt="Icon"
+                />
+              </Link>
             </HStack>
           ) : (
             <HStack spacing={4}>
-              <Image
-                height="2.1em"
-                width="2.1em"
-                src="github-black.png"
-                alt="Icon"
-              />
-              <Image
-                height="2.2em"
-                width="2.2em"
-                src="email-black.png"
-                alt="Icon"
-              />
-              <Image
-                height="2.1em"
-                width="2.1em"
-                src="linkedin-black.png"
-                alt="Icon"
-              />
+              <Link href="https://github.com/ericdachen" isExternal>
+                <Image
+                  height="2.1em"
+                  width="2.1em"
+                  src="github-black.png"
+                  alt="Icon"
+                />
+              </Link>
+              <Link href="mailto:e56chen@uwaterloo.ca" isExternal>
+                <Image
+                  height="2.2em"
+                  width="2.2em"
+                  src="email-black.png"
+                  alt="Icon"
+                />
+              </Link>
+              <Link href="https://www.linkedin.com/in/ericdachen/" isExternal>
+                <Image
+                  height="2.1em"
+                  width="2.1em"
+                  src="linkedin-black.png"
+                  alt="Icon"
+                />
+              </Link>
             </HStack>
           )}
           <a

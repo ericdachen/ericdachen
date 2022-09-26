@@ -82,8 +82,8 @@ function ParticlePage() {
           particles: {
             color: {
               value: [
-                useColorModeValue("#FEFFC2", "#66FCF1"),
-                useColorModeValue("#FED2A5", "A7EE8C"),
+                useColorModeValue("#FEFFC2", "#3B5FD9"),
+                useColorModeValue("#FEB2B2", "#CFA8FA"),
               ],
             },
             links: {
