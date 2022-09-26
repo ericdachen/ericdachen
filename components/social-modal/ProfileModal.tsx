@@ -57,8 +57,8 @@ export default function SocialProfileSimple() {
           Hi there! My name is Eric 👋
         </Text>
         <Text>
-          I&aposm currently a third-year CS student who loves tennis, fullstack,
-          and solving problems!
+          {`I'm currently a third-year CS student who loves tennis, fullstack,
+          and solving problems!`}
         </Text>
 
         <Stack align={"center"} justify={"center"} direction={"row"} mt={6}>
