@@ -54,11 +54,20 @@ function EntrePage() {
                 ></ProjectBox>
                 <ProjectBox
                   boxlink="www.google.com"
-                  imageLink="/headshot.jpeg"
+                  imageLink="/changemaker.jpeg"
+                  fit="cover"
                   height="30em"
                   width="25em"
-                  heading="Changemaker Innovation Challenge 2020"
+                  heading="AshokaU Changemaker Innovation Challenge 2nd Place"
                   description="Developed"
+                ></ProjectBox>
+                <ProjectBox
+                  boxlink="www.google.com"
+                  imageLink="/small.jpeg"
+                  height="20em"
+                  width="25em"
+                  heading="RBC"
+                  description="Worked on RBC"
                 ></ProjectBox>
               </VStack>
             </WrapItem>
@@ -66,20 +75,25 @@ function EntrePage() {
               <VStack spacing={10}>
                 <ProjectBox
                   boxlink="www.google.com"
-                  imageLink="/headshot.jpeg"
-                  height="30em"
+                  imageLink="/microsoftAI.jpeg"
+                  height="27em"
                   width="25em"
-                  heading="Carta"
-                  description="Worked on RBC"
+                  fit="cover"
+                  heading="Microsoft AI Challenge 1st Place"
+                  description="I had the opportunity to embark on the Microsoft Agorize Discover AI Upskilling Challenge AI in finance sprint. Together with my partner, we created a business pitch for a conversational-AI system designed to help traders digest all the information from reliable business news sources all with a quick command whether it be through a chat interface or a voice-enabled device (called “BluChip.ai”)! Our team was honoured to have placed first in the competition!"
                 ></ProjectBox>
 
                 <ProjectBox
                   boxlink="www.google.com"
-                  imageLink="/small.jpeg"
+                  imageLink="/hosa2.jpeg"
                   height="20em"
                   width="25em"
-                  heading="RBC"
-                  description="Worked on RBC"
+                  heading="HOSA Biomedical Debate 1st Place"
+                  description="Competed in the Biomedical Debate category at the annual
+                  Health Occupations Students of America where in particular, we had the opportunity
+                  to debate the ethics surrounding the use of opioids in treating patients undergoing chronic pain. Placed 1st place!"
+                  fit="cover"
+                  align="0% 50%"
                 ></ProjectBox>
                 <ProjectBox
                   boxlink="www.google.com"
@@ -87,6 +101,14 @@ function EntrePage() {
                   height="20em"
                   width="25em"
                   heading="RBC"
+                  description="HP Case Competition"
+                ></ProjectBox>
+                <ProjectBox
+                  boxlink="www.google.com"
+                  imageLink="/small.jpeg"
+                  height="20em"
+                  width="25em"
+                  heading="PepsiCo Pitch Competition"
                   description="Worked on RBC"
                 ></ProjectBox>
               </VStack>

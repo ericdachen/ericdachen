@@ -68,6 +68,7 @@ function ProjectBox(props) {
                       fontSize={"3xl"}
                       fontWeight={"bold"}
                       color={useColorModeValue("white", "white")}
+                      align="center"
                     >
                       {props.heading}
                     </Text>
