@@ -89,7 +89,7 @@ export default function SocialProfileSimple() {
         </Stack>
 
         <Stack mt={8} direction={"row"} spacing={5} paddingLeft="26px">
-          <Link href="resume.pdf">
+          <Link href="/EricChenResumeFall2022.pdf">
             <Button
               flex={1}
               width={"100px"}
