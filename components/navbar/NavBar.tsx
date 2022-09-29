@@ -119,7 +119,7 @@ function NavBar() {
                   rounded={"md"}
                   _hover={{
                     textDecoration: "none",
-                    color: useColorModeValue("red.300", "orange.200"),
+                    color: useColorModeValue("red.300", "purple.200"),
                   }}
                   href={"/EricChenResumeFall2022.pdf"}
                 >
