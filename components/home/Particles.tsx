@@ -74,7 +74,7 @@ function ParticlePage() {
                 quantity: 4,
               },
               repulse: {
-                distance: 500,
+                distance: 250,
                 duration: 0.4,
               },
             },
