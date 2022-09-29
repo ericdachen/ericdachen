@@ -139,10 +139,10 @@ function ShowcasePage() {
               </Button>
               <Button
                 _hover={{
-                  background: useColorModeValue("red.200", "blue.200"),
+                  background: useColorModeValue("red.200", "purple.300"),
                 }}
                 _active={{
-                  background: useColorModeValue("red.200", "blue.200"),
+                  background: useColorModeValue("red.200", "purple.300"),
                 }}
                 onClick={() => handleClick(1)}
                 bgColor={useColorModeValue(two[0], two[1])}
@@ -152,10 +152,10 @@ function ShowcasePage() {
 
               <Button
                 _hover={{
-                  background: useColorModeValue("red.200", "blue.200"),
+                  background: useColorModeValue("red.200", "purple.300"),
                 }}
                 _active={{
-                  background: useColorModeValue("red.200", "blue.200"),
+                  background: useColorModeValue("red.200", "purple.300"),
                 }}
                 onClick={() => handleClick(3)}
                 bgColor={useColorModeValue(four[0], four[1])}
