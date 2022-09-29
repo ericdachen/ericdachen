@@ -33,7 +33,7 @@ const NavLink = ({ children, a }: { children: ReactNode; a: string }) => (
     rounded={"md"}
     _hover={{
       textDecoration: "none",
-      color: useColorModeValue("red.300", "orange.200"),
+      color: useColorModeValue("red.300", "purple.200"),
     }}
     href={"#" + a}
   >
