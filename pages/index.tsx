@@ -26,6 +26,11 @@ const Home: NextPage = () => {
           </Head>
           <VStack>
             <HomePage></HomePage>
+            <br></br>
+            <br></br>
+            <br></br>
+            <br></br>
+            <br></br>
             <ShowcasePage></ShowcasePage>
           </VStack>
 

@@ -51,7 +51,11 @@ function HomePage() {
               </div>
               <div>
                 <Text fontSize={"5vw"}>
-                  <ReactRotatingText items={homeTypingText} />
+                  <ReactRotatingText
+                    typingInterval={70}
+                    pause={2000}
+                    items={homeTypingText}
+                  />
                 </Text>
               </div>
             </HStack>
