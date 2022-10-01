@@ -29,9 +29,9 @@ import {
 import Head from "next/head";
 import ProjectBox from "./showcaseComponents/ProjectBox";
 
-function EntrePage() {
+function EntrePage(props) {
   return (
-    <>
+    <div style={{ opacity: props.opacity }}>
       <br></br>
       <Center>
         <VStack spacing={"3vw"}>
@@ -139,7 +139,7 @@ function EntrePage() {
           <br></br>
         </VStack>
       </Center>
-    </>
+    </div>
   );
 }
 

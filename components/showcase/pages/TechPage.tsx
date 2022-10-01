@@ -29,9 +29,9 @@ import {
 import Head from "next/head";
 import ProjectBox from "./showcaseComponents/ProjectBox";
 
-function TechPage() {
+function TechPage(props) {
   return (
-    <>
+    <div style={{ opacity: props.opacity }}>
       <br></br>
       <Center>
         <VStack spacing={"3vw"}>
@@ -99,7 +99,7 @@ function TechPage() {
           <br></br>
         </VStack>
       </Center>
-    </>
+    </div>
   );
 }
 

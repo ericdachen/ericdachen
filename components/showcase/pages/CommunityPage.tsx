@@ -29,7 +29,7 @@ import {
 import Head from "next/head";
 import ProjectBox from "./showcaseComponents/ProjectBox";
 
-function CommPage() {
+function CommPage(props) {
   return (
     <>
       <br></br>
