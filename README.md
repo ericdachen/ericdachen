@@ -5,6 +5,7 @@
 > 💡 **Website:** Check out my website! https://ericdachen.netlify.app/
 
 > 🔗 **LinkedIn** My LinkedIn! https://www.linkedin.com/in/ericdachen/
+---
 
 **About Me:** 
 
