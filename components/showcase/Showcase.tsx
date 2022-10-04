@@ -165,40 +165,40 @@ function ShowcasePage() {
             </HStack>
             {curButton === 0 ? (
               <SlideFade in={curButton === 0} offsetY="20px">
-                <TechPage opacity="1" />
-                <EntrePage opacity="0" />
-                <CommPage opacity="0" />
-                <ExpPage opacity="0" />
+                <TechPage />
+                <EntrePage display="none" />
+                <CommPage display="none" />
+                <ExpPage display="none" />
               </SlideFade>
             ) : (
               <></>
             )}
             {curButton === 1 ? (
               <SlideFade in={curButton === 1} offsetY="20px">
-                <EntrePage opacity="1" />
-                <TechPage opacity="0" />
-                <CommPage opacity="0" />
-                <ExpPage opacity="0" />
+                <TechPage display="none" />
+                <EntrePage />
+                <CommPage display="none" />
+                <ExpPage display="none" />
               </SlideFade>
             ) : (
               <></>
             )}
             {curButton === 2 ? (
               <SlideFade in={curButton === 2} offsetY="20px">
-                <CommPage opacity="1" />
-                <TechPage opacity="0" />
-                <EntrePage opacity="0" />
-                <ExpPage opacity="0" />
+                <TechPage display="none" />
+                <EntrePage display="none" />
+                <CommPage />
+                <ExpPage display="none" />
               </SlideFade>
             ) : (
               <></>
             )}
             {curButton === 3 ? (
               <SlideFade in={curButton === 3} offsetY="20px">
-                <ExpPage opacity="1" />
-                <TechPage opacity="0" />
-                <EntrePage opacity="0" />
-                <CommPage opacity="0" />
+                <TechPage display="none" />
+                <EntrePage display="none" />
+                <CommPage display="none" />
+                <ExpPage />
               </SlideFade>
             ) : (
               <></>

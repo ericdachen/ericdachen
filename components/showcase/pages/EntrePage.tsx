@@ -31,7 +31,13 @@ import ProjectBox from "./showcaseComponents/ProjectBox";
 
 function EntrePage(props) {
   return (
-    <div style={{ opacity: props.opacity }}>
+    <div
+      style={{
+        opacity: props.opacity,
+        visibility: props.visibility,
+        display: props.display,
+      }}
+    >
       <br></br>
       <Center>
         <VStack spacing={"3vw"}>

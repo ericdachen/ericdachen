@@ -31,7 +31,13 @@ import ProjectBox from "./showcaseComponents/ProjectBox";
 
 function ExpPage(props) {
   return (
-    <>
+    <div
+      style={{
+        opacity: props.opacity,
+        visibility: props.visibility,
+        display: props.display,
+      }}
+    >
       <br></br>
       <Center>
         <VStack spacing={"3vw"}>
@@ -115,7 +121,7 @@ function ExpPage(props) {
           <br></br>
         </VStack>
       </Center>
-    </>
+    </div>
   );
 }
 

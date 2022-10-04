@@ -31,7 +31,13 @@ import ProjectBox from "./showcaseComponents/ProjectBox";
 
 function CommPage(props) {
   return (
-    <>
+    <div
+      style={{
+        opacity: props.opacity,
+        visibility: props.visibility,
+        display: props.display,
+      }}
+    >
       <br></br>
       <Center>
         <VStack spacing={"3vw"}>
@@ -122,7 +128,7 @@ function CommPage(props) {
           <br></br>
         </VStack>
       </Center>
-    </>
+    </div>
   );
 }
 
