@@ -1,4 +1,5 @@
 Hi! I'm Eric!!! 👋
+
 Like technology, I am always developing as a learner, software developer, and student! 🚀🚀🚀
 
 Check out my website! https://ericdachen.netlify.app/
