@@ -2,7 +2,7 @@ Hi! I'm Eric!!! 👋
 
 Like technology, I am always developing as a learner, software developer, and student! 🚀🚀🚀
 
-:💡: **About Me:** Check out my website! https://ericdachen.netlify.app/
+💡 **About Me:** Check out my website! https://ericdachen.netlify.app/
 
 Everyday, we wake up to our morning routine whether that be a morning cup of coffee, reading the daily news, or driving to work. From coffee machines and e-readers, to cars and global-positioning systems, its easy to see the incredible impact technology has had on these daily tasks.
 
