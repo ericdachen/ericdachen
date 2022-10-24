@@ -13,7 +13,7 @@ Everyday, we wake up to our morning routine whether that be a morning cup of cof
 
 Business and entrepreneurship drives our creativity. Computer science gives us the tools to express it!!
 
-As a junior in University of Waterloo's Computer Science and Business Administration Double Degree program, I am excited to explore the world of computer science to develop innovative solutions to some of the world's most pressing issues.
+As a senior in University of Waterloo's Computer Science and Business Administration Double Degree program, I am excited to explore the world of computer science to develop innovative solutions to some of the world's most pressing issues.
 
 Please feel free to contact me at erche3742@gmail.com
 
