@@ -4,7 +4,7 @@
 
 > 💡 **Website:** Check out my website! https://ericdachen.netlify.app/
 
-> 🔗 **LinkedIn** My LinkedIn! https://www.linkedin.com/in/ericdachen/
+> 🔗 **LinkedIn** Wanna see what I've been up to? https://www.linkedin.com/in/ericdachen/
 
 
 **About Me:** 
