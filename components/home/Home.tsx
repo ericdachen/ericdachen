@@ -74,7 +74,7 @@ function HomePage() {
             <br></br></>)}
             <HStack spacing={5}>
             <Heading fontSize={"8vw"}>{`Eric`}</Heading>
-            <Heading fontSize={"8vw"} color={useColorModeValue("red.300", "purple.400")}>{`Chen`}</Heading>
+            <Heading fontSize={"8vw"} color={useColorModeValue("red.400", "purple.400")}>{`Chen`}</Heading>
             </HStack>
             <HStack>
               <div>
@@ -83,7 +83,7 @@ function HomePage() {
                 </Text>
               </div>
               <div>
-                <Text fontSize={"5vw"} color={useColorModeValue("red.300", "purple.400")}>
+                <Text fontSize={"5vw"} color={useColorModeValue("red.400", "purple.400")}>
                   <ReactRotatingText
                     typingInterval={70}
                     pause={2000}
