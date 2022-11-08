@@ -18,6 +18,7 @@ import {
   ModalContent,
   useDisclosure,
   useColorModeValue,
+  Image,
   Stack,
   useColorMode,
   Center,
@@ -25,7 +26,10 @@ import {
   VStack,
 } from "@chakra-ui/react";
 import ParticlePage from "./Particles";
+
 var ReactRotatingText = require("react-rotating-text");
+
+
 
 function HomePage() {
   const homeTypingText = [
@@ -42,15 +46,44 @@ function HomePage() {
       <Box height={"100vh"} width={"100vw"}>
         <Center height={"100vh"} width={"100vw"}>
           <VStack>
-            <Heading fontSize={"10vw"}>{`Hi! I'm Eric 🤩`}</Heading>
+            {useColorModeValue(<><br></br>
+            <br></br>
+            <br></br>
+            <br></br>
+            <br></br>
+            <br></br>
+            <br></br>
+            <br></br>
+            <br></br>
+            <br></br>
+            <br></br>
+            <br></br>
+            <br></br>
+            <br></br>
+            <br></br>
+            <br></br>
+            </>, <>
+            <br></br>
+            <br></br>
+            <br></br>
+            <br></br>
+            <br></br>
+            <br></br>
+            <br></br>
+            <br></br>
+            <br></br></>)}
+            <HStack spacing={5}>
+            <Heading fontSize={"8vw"}>{`Eric`}</Heading>
+            <Heading fontSize={"8vw"} color={useColorModeValue("red.300", "purple.400")}>{`Chen`}</Heading>
+            </HStack>
             <HStack>
               <div>
                 <Text fontSize={"5vw"} paddingRight={"0.5vw"}>
-                  {`I'm`}
+                  {`Hi! I'm`}
                 </Text>
               </div>
               <div>
-                <Text fontSize={"5vw"}>
+                <Text fontSize={"5vw"} color={useColorModeValue("red.300", "purple.400")}>
                   <ReactRotatingText
                     typingInterval={70}
                     pause={2000}
@@ -59,10 +92,22 @@ function HomePage() {
                 </Text>
               </div>
             </HStack>
+            <br></br>
+            {useColorModeValue(
+            <Box boxSize="2xl">
+            <Image src="thinking.svg" />
+          </Box>,
+                      <Box boxSize="lg">
+                      <Image src="adventure.svg" />
+                    </Box>
+            )}
+
+
           </VStack>
-          <ParticlePage />
         </Center>
+
       </Box>
+      <ParticlePage />
     </a>
   );
 }

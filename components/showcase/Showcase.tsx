@@ -97,7 +97,7 @@ function ShowcasePage() {
         <Box
           minH={"100vh"}
           minW={"100vw"}
-          bg={useColorModeValue("gray.50", "gray.700")}
+          bg={useColorModeValue("white", "gray.700")}
         >
           <VStack spacing={"-0vw"}>
             <Text

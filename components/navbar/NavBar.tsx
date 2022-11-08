@@ -62,7 +62,7 @@ function NavBar() {
     <>
       <Box
         position={"fixed"}
-        bg={useColorModeValue("teal.50", "gray.700")}
+        bg={useColorModeValue("yellow.50", "gray.700")}
         px={4}
         width={"100%"}
         zIndex={"100"}
@@ -132,7 +132,7 @@ function NavBar() {
             <Stack direction={"row"} spacing={7}>
               <Button
                 onClick={toggleColorMode}
-                bg={useColorModeValue("teal.100", "blue.700")}
+                bg={useColorModeValue("yellow.100", "blue.800")}
               >
                 {colorMode === "light" ? "🌕" : "☀️"}
               </Button>
