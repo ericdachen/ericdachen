@@ -121,7 +121,7 @@ function NavBar() {
                     textDecoration: "none",
                     color: useColorModeValue("red.300", "purple.200"),
                   }}
-                  href={"/EricChenResumeFall2022.pdf"}
+                  href={"/EricChenResume(5.0)Dev.pdf"}
                 >
                   Resume
                 </Link>

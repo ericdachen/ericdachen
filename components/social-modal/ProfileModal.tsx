@@ -51,14 +51,14 @@ export default function SocialProfileSimple() {
         </Text>
         <Text
           textAlign={"center"}
-          color={useColorModeValue("gray.700", "gray.400")}
+          color={useColorModeValue("black", "white")}
           px={3}
         >
           Hi there! My name is Eric 👋
         </Text>
         <Text>
-          {`I'm currently a third-year CS student who loves tennis, fullstack,
-          and solving problems!`}
+          {`I'm currently a rising senior CS student studying a double degree in Computer Science and Business at the University of Waterloo!
+          I love Full-stack, machine learning, and Front-end Dev!`}
         </Text>
 
         <Stack align={"center"} justify={"center"} direction={"row"} mt={6}>
@@ -89,7 +89,7 @@ export default function SocialProfileSimple() {
         </Stack>
 
         <Stack mt={8} direction={"row"} spacing={5} paddingLeft="26px">
-          <Link href="/EricChenResumeFall2022.pdf">
+          <Link href="/EricChenResume(5.0)Dev.pdf">
             <Button
               flex={1}
               width={"100px"}
