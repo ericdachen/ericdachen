@@ -46,9 +46,9 @@ function EntrePage(props) {
             imageLink="/jdcc2.png"
             fit="cover"
             align="70% 75%"
-            height="20em"
-            width="53em"
-            heading="JDCC Laurier International Business Delegate"
+            height="25em"
+            width="90vw"
+            heading="Laurier International Business Delegate"
             description="
                   Represented the JDCC Laurier Case Competition team as an International Business Delegate!
                   I analyzed business cases, prepared solutions, and delivered presentations all within the span of 3 hours.

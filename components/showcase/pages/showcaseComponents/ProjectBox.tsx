@@ -44,12 +44,16 @@ function ProjectBox(props) {
         zIndex={"0"}
         height={props.height}
         width={props.width}
+        maxWidth="52em"
+        minWidth="25em"
         rounded="20px"
       >
         <Fade in={isOpen} onHoverStart={onToggle} onHoverEnd={onToggle}>
           <Box
             height={props.height}
             width={props.width}
+            maxWidth="52em"
+            minWidth="25em"
             rounded="20px"
             position={"absolute"}
             bg={"black"}
@@ -93,6 +97,9 @@ function ProjectBox(props) {
           alt="Image of showcase"
           align={props.align}
           bgColor={useColorModeValue("white", "white")}
+          overflow="auto"
+          maxWidth="52em"
+          minWidth="25em"
         />
       </Box>
     </>

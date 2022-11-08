@@ -36,6 +36,13 @@ import TechPage from "./pages/TechPage";
 import ExpPage from "./pages/ExpPage";
 import EntrePage from "./pages/EntrePage";
 import CommPage from "./pages/CommunityPage";
+import styled from "styled-components";
+
+const HorizontalScroll = styled.div`
+  background-color: #333;
+  overflow: auto;
+  white-space: nowrap;
+`
 
 function ShowcasePage() {
   const light = "red.100";
@@ -92,7 +99,7 @@ function ShowcasePage() {
         setVisibility(1);
       }}
     >
-      <a id="Showcase">
+      <a id="Showcase" className="showCase">
         {/* <SlideFade in={visibility === 1} offsetY="100px"> */}
         <Box
           minH={"100vh"}
@@ -112,7 +119,8 @@ function ShowcasePage() {
               bg={useColorModeValue("red.200", "purple.200")}
             />
             <br></br>
-            <HStack spacing={3}>
+            <Center>
+            <HStack spacing={3} wrap="wrap">
               <Button
                 _hover={{
                   background: useColorModeValue("red.200", "purple.300"),
@@ -122,6 +130,12 @@ function ShowcasePage() {
                 }}
                 onClick={() => handleClick(0)}
                 bgColor={useColorModeValue(one[0], one[1])}
+                style={{
+                  marginTop: "0.5em",
+                  marginBottom:"0.5em",
+                  marginLeft: "0.5em", 
+                  marginRight: "0.5em",
+                }}
               >
                 Internships
               </Button>
@@ -134,6 +148,12 @@ function ShowcasePage() {
                 }}
                 onClick={() => handleClick(2)}
                 bgColor={useColorModeValue(three[0], three[1])}
+                style={{
+                  marginTop: "0.5em",
+                  marginBottom:"0.5em",
+                  marginLeft: "0.5em", 
+                  marginRight: "0.5em",
+                }}
               >
                 Community
               </Button>
@@ -146,10 +166,15 @@ function ShowcasePage() {
                 }}
                 onClick={() => handleClick(1)}
                 bgColor={useColorModeValue(two[0], two[1])}
+                style={{
+                  marginTop: "0.5em",
+                  marginBottom:"0.5em",
+                  marginLeft: "0.5em", 
+                  marginRight: "0.5em",
+                }}
               >
                 Entrepreneurship
               </Button>
-
               <Button
                 _hover={{
                   background: useColorModeValue("red.200", "purple.300"),
@@ -159,10 +184,17 @@ function ShowcasePage() {
                 }}
                 onClick={() => handleClick(3)}
                 bgColor={useColorModeValue(four[0], four[1])}
+                style={{
+                  marginTop: "0.5em",
+                  marginBottom:"0.5em",
+                  marginLeft: "0.5em", 
+                  marginRight: "0.5em",
+                }}
               >
                 Projects
               </Button>
             </HStack>
+            </Center>
             {curButton === 0 ? (
               <SlideFade in={curButton === 0} offsetY="20px">
                 <TechPage />
