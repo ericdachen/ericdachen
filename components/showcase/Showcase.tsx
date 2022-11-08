@@ -36,13 +36,6 @@ import TechPage from "./pages/TechPage";
 import ExpPage from "./pages/ExpPage";
 import EntrePage from "./pages/EntrePage";
 import CommPage from "./pages/CommunityPage";
-import styled from "styled-components";
-
-const HorizontalScroll = styled.div`
-  background-color: #333;
-  overflow: auto;
-  white-space: nowrap;
-`
 
 function ShowcasePage() {
   const light = "red.100";
