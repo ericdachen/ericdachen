@@ -34,7 +34,6 @@ import Head from "next/head";
 function ProjectBox(props) {
   const { isOpen, onToggle } = useDisclosure();
 
-  console.log(props);
   function openProject() {}
   return (
     <>
