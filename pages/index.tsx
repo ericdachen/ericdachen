@@ -29,10 +29,23 @@ const Home: NextPage = () => {
   const { isOpen, onOpen, onClose } = useDisclosure();
 
   const quotes = [
-    "Last name Ever, first name Greatest",
-    "Live for today, plan for tomorrow, party tonight",
+    '"Last name Ever, first name Greatest"',
+    '"Live for today, plan for tomorrow, party tonight"',
+    '"I want your hot love and emotion, endlessly"',
+    '"One thing I have learned is that I am not the owner of my talent, I am the manager of it."',
+    '"Never stop fighting no matter what anyone says, if it’s in your gut, your soul, there’s nothing, no worldly possession that should come between you and your expression."',
+    '"You can’t knock on opportunity’s door and not be ready."',
+    '"If everything was perfect you would never learn and you would never grow."',
   ];
-  const authors = ["Drake", "Drake"];
+  const authors = [
+    "Drake",
+    "Drake",
+    "Drake",
+    "Madonna",
+    "Kanye West",
+    "Bruno Mars",
+    "Beyoncé",
+  ];
   const min = 0;
   const max = quotes.length - 1;
   const random = Math.floor(Math.random() * (max - min + 1)) + min;
@@ -41,7 +54,7 @@ const Home: NextPage = () => {
     onOpen();
     setTimeout(() => {
       onClose();
-    }, 2000);
+    }, 3000);
   }, []);
 
   return (
@@ -54,14 +67,16 @@ const Home: NextPage = () => {
         />
         <link rel="icon" href="/e2.png" />
       </Head>
-      <NavBar></NavBar>
-      <Fade in={true}>
-        <MobileView>
-          <div className={styles.container}>
-            <HomeMobile />
-          </div>
-        </MobileView>
-      </Fade>
+      <>
+        <NavBar></NavBar>
+        <Center w="120vw">
+          <MobileView>
+            <div className={styles.container}>
+              <HomeMobile />
+            </div>
+          </MobileView>
+        </Center>
+      </>
 
       <BrowserView>
         <>
@@ -71,10 +86,10 @@ const Home: NextPage = () => {
                 <Center h="100vh" w="100vw">
                   <VStack>
                     <span className="loader"></span>
-                    <Heading size="xl" noOfLines={1}>
+                    <Heading maxWidth={"70vw"} size="xl" noOfLines={4}>
                       {quotes[random]}
                     </Heading>
-                    <Heading>~ {authors[random]}</Heading>
+                    <Heading float="right">~ {authors[random]}</Heading>
                   </VStack>
                 </Center>
               </Fade>

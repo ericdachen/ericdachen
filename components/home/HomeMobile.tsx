@@ -74,10 +74,10 @@ function HomeMobile() {
             </HStack>
             <Box>
               {useColorModeValue(
-                <Box boxSize="sm" maxHeight="30vh">
+                <Box boxSize="sm" maxHeight="30vh" maxWidth="95vw">
                   <Image src="thinking.svg" />
                 </Box>,
-                <Box boxSize="sm" maxHeight="40vh">
+                <Box boxSize="sm" maxHeight="40vh" maxWidth="95vw">
                   <Image src="adventure.svg" />
                 </Box>
               )}

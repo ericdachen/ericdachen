@@ -62,11 +62,9 @@ function NavBar() {
     <>
       <Box
         position={"fixed"}
-        top="-20px"
         bg={useColorModeValue("yellow.50", "gray.700")}
         px={4}
         width={"100%"}
-        paddingTop="20px"
         zIndex={"100"}
       >
         <Flex h={16} alignItems={"center"} justifyContent={"space-between"}>
