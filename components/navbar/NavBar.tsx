@@ -132,7 +132,10 @@ function NavBar() {
             <Stack direction={"row"} spacing={7}>
               <Button
                 onClick={toggleColorMode}
-                bg={useColorModeValue("yellow.100", "blue.800")}
+                _hover={{
+                  bg: useColorModeValue("yellow.100", "gray.600"),
+                }}
+                bg={useColorModeValue("yellow.50", "gray.700")}
               >
                 {colorMode === "light" ? "🌕" : "☀️"}
               </Button>
