@@ -46,26 +46,25 @@ const Home: NextPage = () => {
         />
         <link rel="icon" href="/e2.png" />
       </Head>
-      {loading ? (
-        <>
-          <Fade in={loading} unmountOnExit={true}>
-            <Center h="100vh" w="100vw">
-              <VStack>
-                <span className="loader"></span>
-                <Heading size="xl" noOfLines={1}>
-                  {quotes[random]}
-                </Heading>
-                <Heading>~ {authors[random]}</Heading>
-              </VStack>
-            </Center>
-          </Fade>
-        </>
-      ) : (
-        <>
-          <NavBar></NavBar>
-          <BrowserView>
+      <NavBar></NavBar>
+      <BrowserView>
+        {loading ? (
+          <>
+            <Fade in={loading} unmountOnExit={true}>
+              <Center h="100vh" w="100vw">
+                <VStack>
+                  <span className="loader"></span>
+                  <Heading size="xl" noOfLines={1}>
+                    {quotes[random]}
+                  </Heading>
+                  <Heading>~ {authors[random]}</Heading>
+                </VStack>
+              </Center>
+            </Fade>
+          </>
+        ) : (
+          <Fade in={!loading}>
             <div>
-              {/* <ParticlePage></ParticlePage> */}
               <div className={styles.container}>
                 <VStack>
                   <HomePage></HomePage>
@@ -76,18 +75,17 @@ const Home: NextPage = () => {
                   <br></br>
                   <ShowcasePage></ShowcasePage>
                 </VStack>
-
                 <Footer />
               </div>
             </div>
-          </BrowserView>
-          <MobileView>
-            <div className={styles.container}>
-              <HomeMobile />
-            </div>
-          </MobileView>
-        </>
-      )}
+          </Fade>
+        )}
+      </BrowserView>
+      <MobileView>
+        <div className={styles.container}>
+          <HomeMobile />
+        </div>
+      </MobileView>
     </>
   );
 };
