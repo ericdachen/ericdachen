@@ -7,7 +7,14 @@ import NavBar from "../components/navbar/NavBar";
 import HomePage from "../components/home/Home";
 import ParticlePage from "../components/home/Particles";
 import ShowcasePage from "../components/showcase/Showcase";
-import { VStack, Center, Heading, Text, Fade } from "@chakra-ui/react";
+import {
+  VStack,
+  Center,
+  Heading,
+  Text,
+  Fade,
+  useDisclosure,
+} from "@chakra-ui/react";
 import Footer from "../components/footer/Footer";
 import {
   BrowserView,
@@ -19,6 +26,7 @@ import HomeMobile from "../components/home/HomeMobile";
 
 const Home: NextPage = () => {
   const [loading, setLoading] = useState(false);
+  const { isOpen, onOpen, onClose } = useDisclosure();
 
   const quotes = [
     "Last name Ever, first name Greatest",
@@ -30,9 +38,9 @@ const Home: NextPage = () => {
   const random = Math.floor(Math.random() * (max - min + 1)) + min;
 
   useEffect(() => {
-    setLoading(true);
+    onOpen();
     setTimeout(() => {
-      setLoading(false);
+      onClose();
     }, 2000);
   }, []);
 
@@ -48,9 +56,9 @@ const Home: NextPage = () => {
       </Head>
       <NavBar></NavBar>
       <BrowserView>
-        {loading ? (
+        {isOpen && (
           <>
-            <Fade in={loading} unmountOnExit={true}>
+            <Fade in={isOpen} unmountOnExit={true}>
               <Center h="100vh" w="100vw">
                 <VStack>
                   <span className="loader"></span>
@@ -62,8 +70,10 @@ const Home: NextPage = () => {
               </Center>
             </Fade>
           </>
-        ) : (
-          <Fade in={!loading}>
+        )}
+
+        {!isOpen && (
+          <Fade in={!isOpen}>
             <div>
               <div className={styles.container}>
                 <VStack>
