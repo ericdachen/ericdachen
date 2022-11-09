@@ -1,0 +1,50 @@
+.loader {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  display: block;
+  margin:15px auto;
+  position: relative;
+  color: blue;
+  left: -100px;
+  box-sizing: border-box;
+  animation: shadowRolling 2s linear infinite;
+}
+
+.open {
+    animation: fade-in 500ms forwards;
+}
+
+.close {
+    animation: fade-out 500ms forwards;
+}
+
+@keyframes shadowRolling {
+  0% {
+    box-shadow: 0px 0 blue, 0px 0 blue, 0px 0 blue, 0px 0 blue;
+  }
+  12% {
+    box-shadow: 100px 0 blue, 0px 0 blue, 0px 0 blue, 0px 0 blue;
+  }
+  25% {
+    box-shadow: 110px 0 blue, 100px 0 blue, 0px 0 blue, 0px 0 blue;
+  }
+  36% {
+    box-shadow: 120px 0 blue, 110px 0 blue, 100px 0 blue, 0px 0 blue;
+  }
+  50% {
+    box-shadow: 130px 0 blue, 120px 0 blue, 110px 0 blue, 100px 0 blue;
+  }
+  62% {
+    box-shadow: 200px 0 blue, 130px 0 blue, 120px 0 blue, 110px 0 blue;
+  }
+  75% {
+    box-shadow: 200px 0 blue, 200px 0 blue, 130px 0 blue, 120px 0 blue;
+  }
+  87% {
+    box-shadow: 200px 0 blue, 200px 0 blue, 200px 0 blue, 130px 0 blue;
+  }
+  100% {
+    box-shadow: 200px 0 blue, 200px 0 blue, 200px 0 blue, 200px 0 blue;
+  }
+}
