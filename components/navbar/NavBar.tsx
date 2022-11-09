@@ -66,6 +66,8 @@ function NavBar() {
         px={4}
         width={"100vw"}
         zIndex={"100"}
+        paddingTop="20px"
+        top="-20px"
       >
         <Flex h={16} alignItems={"center"} justifyContent={"space-between"}>
           <Modal
