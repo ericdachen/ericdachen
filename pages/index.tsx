@@ -55,47 +55,52 @@ const Home: NextPage = () => {
         <link rel="icon" href="/e2.png" />
       </Head>
       <NavBar></NavBar>
-      <BrowserView>
-        {isOpen && (
-          <>
-            <Fade in={isOpen} unmountOnExit={true}>
-              <Center h="100vh" w="100vw">
-                <VStack>
-                  <span className="loader"></span>
-                  <Heading size="xl" noOfLines={1}>
-                    {quotes[random]}
-                  </Heading>
-                  <Heading>~ {authors[random]}</Heading>
-                </VStack>
-              </Center>
-            </Fade>
-          </>
-        )}
+      <Fade in={true}>
+        <MobileView>
+          <div className={styles.container}>
+            <HomeMobile />
+          </div>
+        </MobileView>
+      </Fade>
 
-        {!isOpen && (
-          <Fade in={!isOpen}>
-            <div>
-              <div className={styles.container}>
-                <VStack>
-                  <HomePage></HomePage>
-                  <br></br>
-                  <br></br>
-                  <br></br>
-                  <br></br>
-                  <br></br>
-                  <ShowcasePage></ShowcasePage>
-                </VStack>
-                <Footer />
+      <BrowserView>
+        <>
+          {isOpen && (
+            <>
+              <Fade in={isOpen} unmountOnExit={true}>
+                <Center h="100vh" w="100vw">
+                  <VStack>
+                    <span className="loader"></span>
+                    <Heading size="xl" noOfLines={1}>
+                      {quotes[random]}
+                    </Heading>
+                    <Heading>~ {authors[random]}</Heading>
+                  </VStack>
+                </Center>
+              </Fade>
+            </>
+          )}
+
+          {!isOpen && (
+            <Fade in={!isOpen}>
+              <div>
+                <div className={styles.container}>
+                  <VStack>
+                    <HomePage></HomePage>
+                    <br></br>
+                    <br></br>
+                    <br></br>
+                    <br></br>
+                    <br></br>
+                    <ShowcasePage></ShowcasePage>
+                  </VStack>
+                  <Footer />
+                </div>
               </div>
-            </div>
-          </Fade>
-        )}
+            </Fade>
+          )}
+        </>
       </BrowserView>
-      <MobileView>
-        <div className={styles.container}>
-          <HomeMobile />
-        </div>
-      </MobileView>
     </>
   );
 };
