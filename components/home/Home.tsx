@@ -35,7 +35,7 @@ function HomePage() {
     "a rising senior at Waterloo",
     "looking for 2023 internships!",
     "a stock market enthusiast",
-    "a Canadian student 🇨🇦",
+    "a Canadian student",
     "a Full-Stack developer",
     "a tennis and golf lover",
     "an entrepreneur at heart",
