@@ -39,6 +39,7 @@ const Home: NextPage = () => {
     '"If everything was perfect you would never learn and you would never grow."',
     "\"I can't understand why people are frightened of new ideas. I'm frightened of the old ones\"",
     '"Everything is scary if you look at it. So you just got to live with it"',
+    '"We need fantasy to survive because reality is too difficult."',
   ];
   const authors = [
     "Drake",
@@ -50,6 +51,7 @@ const Home: NextPage = () => {
     "Beyoncé",
     "John Cage",
     "Mary J. Blige",
+    "Lady Gaga",
   ];
   const min = 0;
   const max = quotes.length - 1;

@@ -53,7 +53,7 @@ function EntrePage(props) {
                   Represented the JDCC Laurier Case Competition team as an International Business Delegate!
                   I analyzed business cases, prepared solutions, and delivered presentations all within the span of 3 hours.
                   This was a year-long training process leading up to a competition against 10 other schools leading to an overall 
-                  placement of 2rd place for Laurier as school of the year! We also placed 2nd place for the Academic Cup for our 
+                  placement of 2nd place for Laurier as school of the year! We also placed 2nd place for the Academic Cup for our 
                   performance in analyzing sponsors' cases."
           ></ProjectBox>
           <Wrap justify={"center"} spacing={"3vw"}>
