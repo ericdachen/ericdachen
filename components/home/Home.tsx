@@ -37,8 +37,9 @@ function HomePage() {
     "a stock market enthusiast",
     "a Canadian student",
     "a Full-Stack developer",
+    "a self-proclaimed designer",
     "a tennis and golf lover",
-    "an entrepreneur at heart",
+    "an entrepreneurial spirit",
   ];
 
   return (

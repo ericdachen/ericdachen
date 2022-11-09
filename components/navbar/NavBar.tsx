@@ -1,4 +1,4 @@
-import React, { ReactNode } from "react";
+import React, { useState, useEffect, ReactNode } from "react";
 import {
   Box,
   Flex,
@@ -10,6 +10,7 @@ import {
   MenuButton,
   MenuList,
   MenuItem,
+  Tooltip,
   MenuDivider,
   Modal,
   ModalOverlay,
@@ -44,7 +45,18 @@ const NavLink = ({ children, a }: { children: ReactNode; a: string }) => (
 function NavBar() {
   const { colorMode, toggleColorMode } = useColorMode();
   const { isOpen, onOpen, onClose } = useDisclosure();
+  const [clicked, setClicked] = useState(true);
 
+  useEffect(() => {
+    setTimeout(() => {
+      setClicked(false);
+    }, 4000);
+  }, []);
+
+  function handleClick() {
+    setClicked(true);
+    onOpen();
+  }
   const pulseRing = keyframes`
 	0% {
     transform: scale(0.33);
@@ -83,28 +95,36 @@ function NavBar() {
           </Modal>
           <Menu>
             <HStack spacing={8} alignItems={"left"}>
-              <MenuButton
-                as={Button}
-                rounded={"full"}
-                variant={"link"}
-                cursor={"pointer"}
-                minW={0}
-                onClick={onOpen}
-                _hover={{ bg: useColorModeValue("gray.200", "gray.700") }}
-                _before={{
-                  content: "''",
-                  position: "absolute",
-                  display: "block",
-                  width: "300%",
-                  height: "300%",
-                  boxSizing: "border-box",
-                  borderRadius: "50%",
-                  bgColor: useColorModeValue("red.300", "purple.200"),
-                  animation: `2.25s ${pulseRing} cubic-bezier(0.455, 0.03, 0.515, 0.955) -0.4s infinite`,
-                }}
+              <Tooltip
+                label="Click on me!"
+                placement="bottom-end"
+                openDelay={2000}
+                isOpen={!clicked}
+                hasArrow
               >
-                <Avatar size={"md"} src={"headshot.jpeg"} />
-              </MenuButton>{" "}
+                <MenuButton
+                  as={Button}
+                  rounded={"full"}
+                  variant={"link"}
+                  cursor={"pointer"}
+                  minW={0}
+                  onClick={handleClick}
+                  _hover={{ bg: useColorModeValue("gray.200", "gray.700") }}
+                  _before={{
+                    content: "''",
+                    position: "absolute",
+                    display: "block",
+                    width: "300%",
+                    height: "300%",
+                    boxSizing: "border-box",
+                    borderRadius: "50%",
+                    bgColor: useColorModeValue("red.300", "purple.200"),
+                    animation: `2.25s ${pulseRing} cubic-bezier(0.455, 0.03, 0.515, 0.955) -0.4s infinite`,
+                  }}
+                >
+                  <Avatar size={"md"} src={"headshot.jpeg"} />
+                </MenuButton>
+              </Tooltip>{" "}
               <HStack
                 as={"nav"}
                 spacing={4}
@@ -138,6 +158,7 @@ function NavBar() {
                   bg: useColorModeValue("yellow.100", "gray.600"),
                 }}
                 bg={useColorModeValue("yellow.50", "gray.700")}
+                marginRight="1em"
               >
                 {colorMode === "light" ? "🌕" : "☀️"}
               </Button>
