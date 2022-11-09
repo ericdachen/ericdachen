@@ -64,7 +64,7 @@ function NavBar() {
         position={"fixed"}
         bg={useColorModeValue("yellow.50", "gray.700")}
         px={4}
-        width={"100%"}
+        width={"100vw"}
         zIndex={"100"}
       >
         <Flex h={16} alignItems={"center"} justifyContent={"space-between"}>
@@ -97,7 +97,7 @@ function NavBar() {
                   height: "300%",
                   boxSizing: "border-box",
                   borderRadius: "50%",
-                  bgColor: useColorModeValue("red.300", "orange.200"),
+                  bgColor: useColorModeValue("red.300", "purple.200"),
                   animation: `2.25s ${pulseRing} cubic-bezier(0.455, 0.03, 0.515, 0.955) -0.4s infinite`,
                 }}
               >

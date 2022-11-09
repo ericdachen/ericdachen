@@ -46,7 +46,7 @@ function HomeMobile() {
       <Box height={"100vh"} width={"100vw"}>
         <Center height={"100vh"} width={"100vw"}>
           <VStack>
-            <HStack spacing={5}>
+            <HStack spacing={3}>
               <Heading fontSize={"12vw"}>{`Eric`}</Heading>
               <Heading
                 fontSize={"12vw"}
@@ -55,7 +55,7 @@ function HomeMobile() {
             </HStack>
             <HStack>
               <div>
-                <Text fontSize={"6vw"} paddingRight={"0.5vw"}>
+                <Text fontSize={"6vw"} paddingRight={"0.3vw"}>
                   {`Hi! I'm`}
                 </Text>
               </div>
@@ -72,13 +72,21 @@ function HomeMobile() {
                 </Text>
               </div>
             </HStack>
+            <br></br>
             <Box>
               {useColorModeValue(
                 <Box boxSize="sm" maxHeight="30vh" maxWidth="95vw">
                   <Image src="thinking.svg" />
                 </Box>,
-                <Box boxSize="sm" maxHeight="40vh" maxWidth="95vw">
-                  <Image src="adventure.svg" />
+                <Box
+                  boxSize="sm"
+                  maxHeight="30vh"
+                  maxWidth="95vw"
+                  style={{
+                    transform: "scaleX(-1)",
+                  }}
+                >
+                  <Image src="thinking2.svg" />
                 </Box>
               )}
             </Box>
@@ -145,7 +153,7 @@ function HomeMobile() {
                 </Text>
               </Box>
             </Center>
-
+            <br></br>
             <a
               href="https://github.com/ericdachen/ericdachen"
               target="_blank"

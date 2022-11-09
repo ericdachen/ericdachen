@@ -73,6 +73,13 @@ function HomePage() {
                 <br></br>
                 <br></br>
                 <br></br>
+                <br></br>
+                <br></br>
+                <br></br>
+                <br></br>
+                <br></br>
+                <br></br>
+                <br></br>
               </>
             )}
             <HStack spacing={5}>
@@ -106,8 +113,13 @@ function HomePage() {
               <Box boxSize="2xl">
                 <Image src="thinking.svg" />
               </Box>,
-              <Box boxSize="lg">
-                <Image src="adventure.svg" />
+              <Box
+                boxSize="2xl"
+                style={{
+                  transform: "scaleX(-1)",
+                }}
+              >
+                <Image src="thinking2.svg" />
               </Box>
             )}
           </VStack>

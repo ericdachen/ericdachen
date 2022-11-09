@@ -14,6 +14,7 @@ import {
   Text,
   Fade,
   useDisclosure,
+  Box,
 } from "@chakra-ui/react";
 import Footer from "../components/footer/Footer";
 import {
@@ -67,16 +68,18 @@ const Home: NextPage = () => {
         />
         <link rel="icon" href="/e2.png" />
       </Head>
-      <>
+      <div>
         <NavBar></NavBar>
-        <Center w="120vw">
-          <MobileView>
-            <div className={styles.container}>
-              <HomeMobile />
-            </div>
-          </MobileView>
-        </Center>
-      </>
+        <Box maxWidth="100vw" padding="0 0">
+          <Center>
+            <MobileView>
+              <div className={styles.container}>
+                <HomeMobile />
+              </div>
+            </MobileView>
+          </Center>
+        </Box>
+      </div>
 
       <BrowserView>
         <>
