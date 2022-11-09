@@ -30,25 +30,26 @@ const Home: NextPage = () => {
   const { isOpen, onOpen, onClose } = useDisclosure();
 
   const quotes = [
-    '"Last name Ever, first name Greatest"',
-    '"Live for today, plan for tomorrow, party tonight"',
+    '"Last name Ever, first name Greatest."',
+    '"Live for today, plan for tomorrow, party tonight."',
     '"I want your hot love and emotion, endlessly"',
     '"One thing I have learned is that I am not the owner of my talent, I am the manager of it."',
     '"Never stop fighting no matter what anyone says, if it’s in your gut, your soul, there’s nothing, no worldly possession that should come between you and your expression."',
     '"You can’t knock on opportunity’s door and not be ready."',
     '"If everything was perfect you would never learn and you would never grow."',
-    "\"I can't understand why people are frightened of new ideas. I'm frightened of the old ones\"",
-    '"Everything is scary if you look at it. So you just got to live with it"',
+    "\"I can't understand why people are frightened of new ideas. I'm frightened of the old ones.\"",
+    '"Everything is scary if you look at it. So you just got to live with it."',
     '"We need fantasy to survive because reality is too difficult."',
     '"Thankfully, dreams can change. If we\'d all stuck with our first dream, the world would be overrun with cowboys and princesses."',
     '"Why can\'t I just eat my waffle?"',
+    '"I think that success is having fun."'
   ];
   const authors = [
     "Drake",
     "Drake",
     "Drake",
     "Madonna",
-    "Kanye West",
+    "Kanye West",=
     "Bruno Mars",
     "Beyoncé",
     "John Cage",
