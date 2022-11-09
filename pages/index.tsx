@@ -42,14 +42,14 @@ const Home: NextPage = () => {
     '"We need fantasy to survive because reality is too difficult."',
     '"Thankfully, dreams can change. If we\'d all stuck with our first dream, the world would be overrun with cowboys and princesses."',
     '"Why can\'t I just eat my waffle?"',
-    '"I think that success is having fun."'
+    '"I think that success is having fun."',
   ];
   const authors = [
     "Drake",
     "Drake",
     "Drake",
     "Madonna",
-    "Kanye West",=
+    "Kanye West",
     "Bruno Mars",
     "Beyoncé",
     "John Cage",
@@ -57,6 +57,7 @@ const Home: NextPage = () => {
     "Lady Gaga",
     "Stephen Colbert",
     "Barrack Obama",
+    "Bruno Mars",
   ];
   const min = 0;
   const max = quotes.length - 1;
