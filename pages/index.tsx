@@ -37,6 +37,8 @@ const Home: NextPage = () => {
     '"Never stop fighting no matter what anyone says, if it’s in your gut, your soul, there’s nothing, no worldly possession that should come between you and your expression."',
     '"You can’t knock on opportunity’s door and not be ready."',
     '"If everything was perfect you would never learn and you would never grow."',
+    "\"I can't understand why people are frightened of new ideas. I'm frightened of the old ones\"",
+    '"Everything is scary if you look at it. So you just got to live with it"',
   ];
   const authors = [
     "Drake",
@@ -46,6 +48,8 @@ const Home: NextPage = () => {
     "Kanye West",
     "Bruno Mars",
     "Beyoncé",
+    "John Cage",
+    "Mary J. Blige",
   ];
   const min = 0;
   const max = quotes.length - 1;

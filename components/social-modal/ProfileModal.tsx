@@ -46,8 +46,8 @@ export default function SocialProfileSimple() {
         <Heading fontSize={"2xl"} fontFamily={"body"}>
           Eric Chen
         </Heading>
-        <Text fontWeight={600} color={"gray.500"} mb={4}>
-          @ericdachen
+        <Text fontWeight={600} color={"gray.500"} mb={2}>
+          University of Waterloo
         </Text>
         <Text
           textAlign={"center"}
@@ -57,8 +57,8 @@ export default function SocialProfileSimple() {
           Hi there! My name is Eric 👋
         </Text>
         <Text>
-          {`I'm currently a rising senior CS student studying a double degree in Computer Science and Business at the University of Waterloo!
-          I love Full-stack, machine learning, and Front-end Dev!`}
+          {`I'm currently a rising senior student studying Computer Science and Business Administration!
+          I'm currently looking for a Winter 2023 and Summer 2023 Internship!`}
         </Text>
 
         <Stack align={"center"} justify={"center"} direction={"row"} mt={6}>
