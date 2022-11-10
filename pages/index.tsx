@@ -43,6 +43,9 @@ const Home: NextPage = () => {
     '"Thankfully, dreams can change. If we\'d all stuck with our first dream, the world would be overrun with cowboys and princesses."',
     '"Why can\'t I just eat my waffle?"',
     '"I think that success is having fun."',
+    "\"If there's any message to my work, it's ultimately that it's ok to be different.\"",
+    '"You pray for rain, you gotta deal with the mud too."',
+    '"There are no regrets in life. Just lessons."',
   ];
   const authors = [
     "Drake",
@@ -58,6 +61,9 @@ const Home: NextPage = () => {
     "Stephen Colbert",
     "Barrack Obama",
     "Bruno Mars",
+    "Johnny Depp",
+    "Denzel Washington",
+    "Jennifer Aniston",
   ];
   const min = 0;
   const max = quotes.length - 1;
