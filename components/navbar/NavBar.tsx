@@ -158,7 +158,7 @@ function NavBar() {
                   bg: useColorModeValue("yellow.100", "gray.600"),
                 }}
                 bg={useColorModeValue("yellow.50", "gray.700")}
-                marginRight="1em"
+                marginRight="0.5em"
               >
                 {colorMode === "light" ? "🌕" : "☀️"}
               </Button>
