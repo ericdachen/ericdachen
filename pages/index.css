@@ -11,6 +11,11 @@
   animation: shadowRolling 2s linear infinite;
 }
 
+body {
+  scrollbar-gutter: stable both-edges;
+  overflow-x: hidden;
+}
+
 .open {
     animation: fade-in 500ms forwards;
 }

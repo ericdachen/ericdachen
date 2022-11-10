@@ -44,8 +44,8 @@ function HomePage() {
 
   return (
     <a id="Home">
-      <Box height={"100vh"} width={"100vw"}>
-        <Center height={"100vh"} width={"100vw"}>
+      <Box height="100%" width="100%">
+        <Center height="100vh" width="100vw">
           <VStack>
             {useColorModeValue(
               <>
