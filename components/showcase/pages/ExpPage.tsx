@@ -25,11 +25,13 @@ import {
   Divider,
   Wrap,
   WrapItem,
+  useTimeout,
 } from "@chakra-ui/react";
 import Head from "next/head";
 import ProjectBox from "./showcaseComponents/ProjectBox";
 
 function ExpPage(props) {
+  const [swapWeb, setSwapWeb] = useState(false);
   return (
     <div
       style={{
@@ -92,28 +94,46 @@ function ExpPage(props) {
               </VStack>
             </WrapItem>
           </Wrap>
-          <ProjectBox
-            boxlink="www.google.com"
-            imageLink="/website2.gif"
-            fit="cover"
-            align="50% 0%"
-            height="25em"
-            width="53em"
-            heading="My Website"
-            description="This website was made with love using Chakra UI and Next.js because
+          {useColorModeValue(
+            <ProjectBox
+              boxlink="www.google.com"
+              imageLink="/websiteScreen.png"
+              fit="cover"
+              align="50% 0%"
+              height="25em"
+              width="90vw"
+              heading="My Website"
+              description="This website was made with love using Chakra UI and Next.js because
+                    I'd heard great things about Chakra UI as a framework and wanted to try it instead
+                    of the typical Bootstrap and MaterialUI both of which I've used before as well. From ideation
+                    to design to execution I had a blast getting to test my design skill and ability (or lack thereof) to group components
+                    on Figma in addition to trying out this new framework! I have
+                    to say that making this website was actually very fun and I enjoyed it very much!"
+            ></ProjectBox>,
+            <ProjectBox
+              boxlink="www.google.com"
+              imageLink="/websiteScreenDark.png"
+              fit="cover"
+              align="50% 0%"
+              height="25em"
+              width="90vw"
+              heading="My Website"
+              description="This website was made with love using Chakra UI and Next.js because
                   I'd heard great things about Chakra UI as a framework and wanted to try it instead
                   of the typical Bootstrap and MaterialUI both of which I've used before as well. From ideation
                   to design to execution I had a blast getting to test my design skill and ability (or lack thereof) to group components
                   on Figma in addition to trying out this new framework! I have
                   to say that making this website was actually very fun and I enjoyed it very much!"
-          ></ProjectBox>
+            ></ProjectBox>
+          )}
+
           <ProjectBox
             boxlink="www.google.com"
             imageLink="/oap.png"
             height="25em"
             align="50% 0%"
             fit="cover"
-            width="53em"
+            width="90vw"
             heading="Ontario Autism Program"
             description="I developed and coded a high-fidelity functional prototype using React, node.js, and Firebase CLI for the Ontario Autism Program. I developed a web portal that would allow families to easily apply for funding to reduce wait times, increase client communication, and create an overall better user experience. Through this project, I learned how to set up Gitlab CI/CD, Firebase hosting, and cloud firestore functions. Furthermore, I conducted user interviews with stakeholders/clients of OAP to inform the development of the prototype. After developing the web application, I conducted usability testing and iterated upon the app using Agile SDLC methodology.
             Furthermore, I delivered bi-weekly presentations of our work to stakeholders and executives across various government ministries including the Treasury Board Secretariat and Ministry of Government and Consumer Services.             "
