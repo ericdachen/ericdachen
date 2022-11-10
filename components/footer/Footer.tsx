@@ -49,7 +49,7 @@ function Footer() {
                 <Image
                   height="2.2em"
                   width="2.2em"
-                  src="email-white.png"
+                  src="send-white.png"
                   alt="Icon"
                 />
               </Link>
@@ -58,6 +58,14 @@ function Footer() {
                   height="2.1em"
                   width="2.1em"
                   src="linkedin-white.png"
+                  alt="Icon"
+                />
+              </Link>
+              <Link href="/EricChenResumeWinter2023Dev.pdf">
+                <Image
+                  height="2.1em"
+                  width="2.1em"
+                  src="resumeDark.png"
                   alt="Icon"
                 />
               </Link>
@@ -76,7 +84,7 @@ function Footer() {
                 <Image
                   height="2.2em"
                   width="2.2em"
-                  src="email-black.png"
+                  src="send-black.png"
                   alt="Icon"
                 />
               </Link>
@@ -85,6 +93,14 @@ function Footer() {
                   height="2.1em"
                   width="2.1em"
                   src="linkedin-black.png"
+                  alt="Icon"
+                />
+              </Link>
+              <Link href="/EricChenResumeWinter2023Dev.pdf">
+                <Image
+                  height="2.1em"
+                  width="2.1em"
+                  src="resumeLight.png"
                   alt="Icon"
                 />
               </Link>
