@@ -2,7 +2,7 @@
 
 > 🚀 Like technology, I am always developing as a learner, software developer, and student!
 
-> 💡 **Website:** Check out my website! https://ericdachen.netlify.app/
+> 💡 **Website:** Check out my website! [https://ericdachen.com/](https://www.ericdachen.com/)
 
 > 🔗 **LinkedIn** Wanna see what I've been up to? https://www.linkedin.com/in/ericdachen/
 
