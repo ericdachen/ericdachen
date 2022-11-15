@@ -53,6 +53,12 @@ function NavBar() {
     }, 4000);
   }, []);
 
+  useEffect(() => {
+    setTimeout(() => {
+      setClicked(true);
+    }, 8000);
+  }, []);
+
   function handleClick() {
     setClicked(true);
     onOpen();
