@@ -58,7 +58,7 @@ export default function SocialProfileSimple() {
         </Text>
         <Text>
           {`I'm currently a rising senior student studying Computer Science and Business Administration!
-          I'm currently looking for a Winter 2023 and Summer 2023 Internship!`}
+          I'm currently looking for a Summer 2023 and Fall 2023 Internship!`}
         </Text>
 
         <Stack align={"center"} justify={"center"} direction={"row"} mt={6}>
