@@ -43,7 +43,7 @@ function EntrePage(props) {
         <VStack spacing={"3vw"}>
           <ProjectBox
             boxlink="www.google.com"
-            imageLink="/jdcc2.png"
+            imageLink="/jdcc2.avif"
             fit="cover"
             align="70% 75%"
             height="25em"
