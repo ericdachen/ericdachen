@@ -61,7 +61,7 @@ function Footer() {
                   alt="Icon"
                 />
               </Link>
-              <Link href="/EricChenResumeWinter2023Dev.pdf">
+              <Link href="/EricChenSummer2023Dev.pdf">
                 <Image
                   height="2.1em"
                   width="2.1em"
@@ -96,7 +96,7 @@ function Footer() {
                   alt="Icon"
                 />
               </Link>
-              <Link href="/EricChenResumeWinter2023Dev.pdf">
+              <Link href="/EricChenSummer2023Dev.pdf">
                 <Image
                   height="2.1em"
                   width="2.1em"

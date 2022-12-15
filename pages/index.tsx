@@ -105,13 +105,32 @@ const Home: NextPage = () => {
             <>
               <Fade in={isOpen} unmountOnExit={true}>
                 <Center h="100vh" w="100vw">
-                  <VStack>
-                    <span className="loader"></span>
-                    <Heading maxWidth={"70vw"} size="xl" noOfLines={4}>
-                      {quotes[random]}
-                    </Heading>
-                    <Heading float="right">~ {authors[random]}</Heading>
-                  </VStack>
+                  <div className="animation-container">
+                    <VStack>
+                      <Heading maxWidth={"70vw"} size="xl" noOfLines={4}>
+                        {quotes[random]}
+                      </Heading>
+                      <Heading float="right">~ {authors[random]}</Heading>
+                    </VStack>
+
+                    <div className="lightning-container">
+                      <div className="lightning white"></div>
+                      <div className="lightning red"></div>
+                    </div>
+                    <div className="boom-container">
+                      <div className="shape circle big white"></div>
+                      <div className="shape circle white"></div>
+                      <div className="shape triangle big yellow"></div>
+                      <div className="shape disc white"></div>
+                      <div className="shape triangle blue"></div>
+                    </div>
+                    <div className="boom-container second">
+                      <div className="shape circle big white"></div>
+                      <div className="shape circle white"></div>
+                      <div className="shape disc white"></div>
+                      <div className="shape triangle blue"></div>
+                    </div>
+                  </div>
                 </Center>
               </Fade>
             </>
