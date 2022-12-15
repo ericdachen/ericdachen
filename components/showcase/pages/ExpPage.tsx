@@ -48,7 +48,7 @@ function ExpPage(props) {
               <VStack spacing={10}>
                 <ProjectBox
                   boxlink="www.google.com"
-                  imageLink="/traffa.png"
+                  imageLink="/traffa.avif"
                   fit="cover"
                   height="27em"
                   width="25em"
@@ -129,7 +129,7 @@ function ExpPage(props) {
 
           <ProjectBox
             boxlink="www.google.com"
-            imageLink="/oap.png"
+            imageLink="/oap.avif"
             height="25em"
             align="50% 0%"
             fit="cover"

@@ -46,7 +46,7 @@ function CommPage(props) {
               <VStack spacing={10}>
                 <ProjectBox
                   boxlink="www.google.com"
-                  imageLink="/ht6eric.png"
+                  imageLink="/ht6eric.avif"
                   height="35em"
                   width="25em"
                   fit="cover"
