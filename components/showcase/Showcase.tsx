@@ -102,14 +102,14 @@ function ShowcasePage() {
           <VStack spacing={"-0vw"}>
             <Text
               fontSize={"8vw"}
-              color={useColorModeValue("red.300", "purple.200")}
+              color={useColorModeValue("red.300", "purple.300")}
             >
               Showcase
             </Text>
             <Box
               height={"0.5vw"}
               width={"8vw"}
-              bg={useColorModeValue("red.200", "purple.200")}
+              bg={useColorModeValue("red.200", "purple.300")}
             />
             <br></br>
             <Center>
