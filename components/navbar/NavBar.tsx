@@ -80,7 +80,7 @@ function NavBar() {
     <>
       <Box
         position={"fixed"}
-        bg={useColorModeValue("yellow.50", "gray.700")}
+        bg={useColorModeValue("#FEF9F1", "gray.700")}
         px={4}
         width={"100vw"}
         zIndex={"100"}
@@ -160,10 +160,13 @@ function NavBar() {
             <Stack direction={"row"} spacing={7}>
               <Button
                 onClick={toggleColorMode}
+                variant="outline"
+                colorScheme={useColorModeValue("#FFEEE6", "blue")}
                 _hover={{
                   bg: useColorModeValue("yellow.100", "gray.600"),
                 }}
-                bg={useColorModeValue("yellow.50", "gray.700")}
+                borderRadius="100px"
+                bg={useColorModeValue("#FEF9F1", "gray.700")}
               >
                 {colorMode === "light" ? "🌕" : "☀️"}
               </Button>

@@ -97,12 +97,12 @@ function ShowcasePage() {
         <Box
           minH={"100vh"}
           minW={"100vw"}
-          bg={useColorModeValue("white", "gray.700")}
+          bg={useColorModeValue("#FEF9F1", "gray.700")}
         >
           <VStack spacing={"-0vw"}>
             <Text
               fontSize={"8vw"}
-              color={useColorModeValue("red.200", "purple.200")}
+              color={useColorModeValue("red.300", "purple.200")}
             >
               Showcase
             </Text>
@@ -113,80 +113,80 @@ function ShowcasePage() {
             />
             <br></br>
             <Center>
-            <HStack spacing={3} wrap="wrap">
-              <Button
-                _hover={{
-                  background: useColorModeValue("red.200", "purple.300"),
-                }}
-                _active={{
-                  background: useColorModeValue("red.200", "purple.200"),
-                }}
-                onClick={() => handleClick(0)}
-                bgColor={useColorModeValue(one[0], one[1])}
-                style={{
-                  marginTop: "0.5em",
-                  marginBottom:"0.5em",
-                  marginLeft: "0.5em", 
-                  marginRight: "0.5em",
-                }}
-              >
-                Internships
-              </Button>
-              <Button
-                _hover={{
-                  background: useColorModeValue("red.200", "purple.300"),
-                }}
-                _active={{
-                  background: useColorModeValue("red.200", "purple.300"),
-                }}
-                onClick={() => handleClick(2)}
-                bgColor={useColorModeValue(three[0], three[1])}
-                style={{
-                  marginTop: "0.5em",
-                  marginBottom:"0.5em",
-                  marginLeft: "0.5em", 
-                  marginRight: "0.5em",
-                }}
-              >
-                Community
-              </Button>
-              <Button
-                _hover={{
-                  background: useColorModeValue("red.200", "purple.300"),
-                }}
-                _active={{
-                  background: useColorModeValue("red.200", "purple.300"),
-                }}
-                onClick={() => handleClick(1)}
-                bgColor={useColorModeValue(two[0], two[1])}
-                style={{
-                  marginTop: "0.5em",
-                  marginBottom:"0.5em",
-                  marginLeft: "0.5em", 
-                  marginRight: "0.5em",
-                }}
-              >
-                Entrepreneurship
-              </Button>
-              <Button
-                _hover={{
-                  background: useColorModeValue("red.200", "purple.300"),
-                }}
-                _active={{
-                  background: useColorModeValue("red.200", "purple.300"),
-                }}
-                onClick={() => handleClick(3)}
-                bgColor={useColorModeValue(four[0], four[1])}
-                style={{
-                  marginTop: "0.5em",
-                  marginBottom:"0.5em",
-                  marginLeft: "0.5em", 
-                  marginRight: "0.5em",
-                }}
-              >
-                Projects
-              </Button>
-            </HStack>
+              <HStack spacing={3} wrap="wrap">
+                <Button
+                  _hover={{
+                    background: useColorModeValue("red.200", "purple.300"),
+                  }}
+                  _active={{
+                    background: useColorModeValue("red.200", "purple.200"),
+                  }}
+                  onClick={() => handleClick(0)}
+                  bgColor={useColorModeValue(one[0], one[1])}
+                  style={{
+                    marginTop: "0.5em",
+                    marginBottom: "0.5em",
+                    marginLeft: "0.5em",
+                    marginRight: "0.5em",
+                  }}
+                >
+                  Internships
+                </Button>
+                <Button
+                  _hover={{
+                    background: useColorModeValue("red.200", "purple.300"),
+                  }}
+                  _active={{
+                    background: useColorModeValue("red.200", "purple.300"),
+                  }}
+                  onClick={() => handleClick(2)}
+                  bgColor={useColorModeValue(three[0], three[1])}
+                  style={{
+                    marginTop: "0.5em",
+                    marginBottom: "0.5em",
+                    marginLeft: "0.5em",
+                    marginRight: "0.5em",
+                  }}
+                >
+                  Community
+                </Button>
+                <Button
+                  _hover={{
+                    background: useColorModeValue("red.200", "purple.300"),
+                  }}
+                  _active={{
+                    background: useColorModeValue("red.200", "purple.300"),
+                  }}
+                  onClick={() => handleClick(1)}
+                  bgColor={useColorModeValue(two[0], two[1])}
+                  style={{
+                    marginTop: "0.5em",
+                    marginBottom: "0.5em",
+                    marginLeft: "0.5em",
+                    marginRight: "0.5em",
+                  }}
+                >
+                  Entrepreneurship
+                </Button>
+                <Button
+                  _hover={{
+                    background: useColorModeValue("red.200", "purple.300"),
+                  }}
+                  _active={{
+                    background: useColorModeValue("red.200", "purple.300"),
+                  }}
+                  onClick={() => handleClick(3)}
+                  bgColor={useColorModeValue(four[0], four[1])}
+                  style={{
+                    marginTop: "0.5em",
+                    marginBottom: "0.5em",
+                    marginLeft: "0.5em",
+                    marginRight: "0.5em",
+                  }}
+                >
+                  Projects
+                </Button>
+              </HStack>
             </Center>
             {curButton === 0 ? (
               <SlideFade in={curButton === 0} offsetY="20px">
