@@ -62,6 +62,15 @@ function TechPage(props) {
                   Finally, I had the chance to be an advocate for students with a 10K Coffees ideation workshop. I presented in a Student Partners x 10K Coffees Team Ideation workshop."
                 ></ProjectBox>
                 <ProjectBox
+                  boxlink="https://www.datadoghq.com/"
+                  imageLink="/datadog.jpeg"
+                  height="30em"
+                  width="25em"
+                  fit="cover"
+                  heading="Datadog"
+                  description="Incoming @ Fall 2023"
+                ></ProjectBox>
+                <ProjectBox
                   boxlink="https://www.linkedin.com/in/ericdachen/"
                   imageLink="/questionMark.png"
                   height="25em"
@@ -86,7 +95,6 @@ function TechPage(props) {
                   Furthermore, I migrated over 10 protobuf messages to enforce event-driven architecture schema guidelines and refactored the organization’s creation of kafka messages to support this schema for 500+ developers.
                   "
                 ></ProjectBox>
-
                 <ProjectBox
                   boxlink="https://www.ontario.ca/page/ontario-digital-service"
                   imageLink="/ontariologo.png"
@@ -98,6 +106,16 @@ function TechPage(props) {
                   At the same time, I also developed accessible data visualizations using React.js and Node.js generating over 500,000+ unique page views in less than one month 
                   during the peak of the pandemic.
                   Furthermore, I built a Gitlab CI/CD pipeline to automatically deploy to Firebase and implemented Agile methodology to rapidly iterate the prototype by conducting usability tests with 20+ program stakeholders and clients"
+                ></ProjectBox>
+                <ProjectBox
+                  boxlink="https://www.wealthsimple.com/en-ca"
+                  imageLink="/wealthsimple.jpeg"
+                  align="50% 50%"
+                  height="30em"
+                  width="25em"
+                  fit="cover"
+                  heading="Wealthsimple"
+                  description="Incoming @ Summer 2023"
                 ></ProjectBox>
               </VStack>
             </WrapItem>
