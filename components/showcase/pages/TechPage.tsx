@@ -45,7 +45,7 @@ function TechPage(props) {
             <WrapItem>
               <VStack spacing={10}>
                 <ProjectBox
-                  boxlink="www.google.com"
+                  boxlink="https://ca.rbcwealthmanagement.com/web/marita.simbul-lezon/mygps"
                   imageLink="/rbclogo2.jpeg"
                   align="48% 50%"
                   fit="cover"
@@ -62,7 +62,7 @@ function TechPage(props) {
                   Finally, I had the chance to be an advocate for students with a 10K Coffees ideation workshop. I presented in a Student Partners x 10K Coffees Team Ideation workshop."
                 ></ProjectBox>
                 <ProjectBox
-                  boxlink="www.google.com"
+                  boxlink="https://www.linkedin.com/in/ericdachen/"
                   imageLink="/questionMark.png"
                   height="25em"
                   width="25em"
@@ -75,7 +75,7 @@ function TechPage(props) {
             <WrapItem>
               <VStack spacing={10}>
                 <ProjectBox
-                  boxlink="www.google.com"
+                  boxlink="https://carta.com/"
                   imageLink="/cartalogo2.jpeg"
                   height="33em"
                   fit="cover"
@@ -88,7 +88,7 @@ function TechPage(props) {
                 ></ProjectBox>
 
                 <ProjectBox
-                  boxlink="www.google.com"
+                  boxlink="https://www.ontario.ca/page/ontario-digital-service"
                   imageLink="/ontariologo.png"
                   height="30em"
                   width="25em"

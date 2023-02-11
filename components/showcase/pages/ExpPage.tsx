@@ -47,7 +47,7 @@ function ExpPage(props) {
             <WrapItem>
               <VStack spacing={10}>
                 <ProjectBox
-                  boxlink="www.google.com"
+                  boxlink="https://devpost.com/software/traffa"
                   imageLink="/traffa.avif"
                   fit="cover"
                   height="27em"
@@ -58,7 +58,7 @@ function ExpPage(props) {
                       "
                 ></ProjectBox>
                 <ProjectBox
-                  boxlink="www.google.com"
+                  boxlink="https://devpost.com/software/cali-bust"
                   imageLink="/interview.png"
                   fit="contain"
                   height="25em"
@@ -71,7 +71,7 @@ function ExpPage(props) {
             <WrapItem>
               <VStack spacing={10}>
                 <ProjectBox
-                  boxlink="www.google.com"
+                  boxlink="https://devpost.com/software/flutter-dcof2b"
                   imageLink="/shipmates.png"
                   fit="contain"
                   align="50% 50%"
@@ -83,7 +83,7 @@ function ExpPage(props) {
                 ></ProjectBox>
 
                 <ProjectBox
-                  boxlink="www.google.com"
+                  boxlink="https://github.com/ericdachen/Battlesnake2021-RBC"
                   imageLink="/battlesnake.jpeg"
                   height="25em"
                   width="25em"
@@ -96,7 +96,7 @@ function ExpPage(props) {
           </Wrap>
           {useColorModeValue(
             <ProjectBox
-              boxlink="www.google.com"
+              boxlink="https://www.ericdachen.com/"
               imageLink="/websiteScreen.png"
               fit="cover"
               align="50% 0%"
@@ -111,7 +111,7 @@ function ExpPage(props) {
                     to say that making this website was actually very fun and I enjoyed it very much!"
             ></ProjectBox>,
             <ProjectBox
-              boxlink="www.google.com"
+              boxlink="https://www.ericdachen.com/"
               imageLink="/websiteScreenDark.png"
               fit="cover"
               align="50% 0%"
@@ -128,7 +128,7 @@ function ExpPage(props) {
           )}
 
           <ProjectBox
-            boxlink="www.google.com"
+            boxlink="https://ods-autism.web.app/"
             imageLink="/oap.avif"
             height="25em"
             align="50% 0%"

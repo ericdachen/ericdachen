@@ -34,11 +34,9 @@ import Head from "next/head";
 function ProjectBox(props) {
   const { isOpen, onToggle } = useDisclosure();
 
-  function openProject() {}
   return (
-    <>
+    <Link href={props.boxlink} isExternal>
       <Box
-        onClick={openProject}
         bg={useColorModeValue("gray.400", "gray.600")}
         zIndex={"0"}
         height={props.height}
@@ -101,7 +99,7 @@ function ProjectBox(props) {
           minWidth="25em"
         />
       </Box>
-    </>
+    </Link>
   );
 }
 

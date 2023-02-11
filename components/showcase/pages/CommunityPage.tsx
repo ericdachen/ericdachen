@@ -45,7 +45,7 @@ function CommPage(props) {
             <WrapItem>
               <VStack spacing={10}>
                 <ProjectBox
-                  boxlink="www.google.com"
+                  boxlink="https://hackthe6ix.com/"
                   imageLink="/ht6eric.avif"
                   height="35em"
                   width="25em"
@@ -65,7 +65,7 @@ function CommPage(props) {
                       "
                 ></ProjectBox>
                 <ProjectBox
-                  boxlink="www.google.com"
+                  boxlink="https://news.ontario.ca/en/bulletin/42848/applications-for-student-speakup-grants-now-open"
                   imageLink="/speakup.jpeg"
                   height="27em"
                   align="65% 50%"
@@ -75,7 +75,7 @@ function CommPage(props) {
                   description="Through the SpeakUp Government Grant funded by the Ontario Ministry of Education by single-handedly organizing and hosting a debate workshop and tournament for middle school students across the Wellington District to encourage them to engage in debating in the future. I secured a $1,250 provincial government grant from SpeakUp Student Voice project and I organized and planned all aspects of the event ranging from the itinerary to the budget expenses. "
                 ></ProjectBox>
                 <ProjectBox
-                  boxlink="www.google.com"
+                  boxlink="https://uwaterloo.ca/math/campus-resources/join-math-faculty-ambassador-team"
                   imageLink="/ambassador.png"
                   height="18em"
                   align="0% 50%"
@@ -90,7 +90,7 @@ function CommPage(props) {
             <WrapItem>
               <VStack spacing={10}>
                 <ProjectBox
-                  boxlink="www.google.com"
+                  boxlink="https://www.techplusuw.com/"
                   imageLink="/techplus.png"
                   fit="contain"
                   align="25% 50%"
@@ -104,7 +104,7 @@ function CommPage(props) {
                 ></ProjectBox>
 
                 <ProjectBox
-                  boxlink="www.google.com"
+                  boxlink="https://www.ted.com/tedx/events/19579"
                   imageLink="/tedx.jpeg"
                   height="30em"
                   width="25em"
@@ -113,7 +113,7 @@ function CommPage(props) {
                   description="As the event coordinator for the Tedx Youth at Guelph 2018 event, I spearheaded the operations of the event ranging from the entire design and layout of the event to the promotional items that were distributed including branding and logo design. Tedx Youth at Guelph every year hosts over 100 students from across the Wellington District to listen to inspirational speakers that teach youth in our community how to create meaningful change within their communities. This is an event focused on inspiring and providing tools for youth in our community to make a change."
                 ></ProjectBox>
                 <ProjectBox
-                  boxlink="www.google.com"
+                  boxlink="https://www.gghorg.ca/volunteers/"
                   imageLink="/gghorg.jpeg"
                   height="23em"
                   width="25em"
