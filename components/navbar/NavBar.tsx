@@ -31,6 +31,7 @@ const NavLink = ({ children, a }: { children: ReactNode; a: string }) => (
   <Link
     px={2}
     py={1}
+    id="chakra-link"
     rounded={"md"}
     _hover={{
       textDecoration: "none",

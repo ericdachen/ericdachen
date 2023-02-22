@@ -142,11 +142,6 @@ const Home: NextPage = () => {
                 <div className={styles.container}>
                   <VStack>
                     <HomePage></HomePage>
-                    <br></br>
-                    <br></br>
-                    <br></br>
-                    <br></br>
-                    <br></br>
                     <ShowcasePage></ShowcasePage>
                   </VStack>
                   <Footer />

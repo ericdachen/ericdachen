@@ -93,6 +93,7 @@ function ShowcasePage() {
       }}
     >
       <a id="Showcase" className="showCase">
+        <Box minH={"7vh"} minW={"10vw"}></Box>
         {/* <SlideFade in={visibility === 1} offsetY="100px"> */}
         <Box
           minH={"100vh"}
@@ -230,7 +231,6 @@ function ShowcasePage() {
             )}
           </VStack>
         </Box>
-        {/* </SlideFade> */}
       </a>
     </VisibilitySensor>
   );

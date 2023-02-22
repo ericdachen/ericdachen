@@ -3,7 +3,7 @@
   height: 10px;
   border-radius: 50%;
   display: block;
-  margin:15px auto;
+  margin: 15px auto;
   position: relative;
   color: blue;
   left: -100px;
@@ -11,6 +11,9 @@
   animation: shadowRolling 2s linear infinite;
 }
 
+html {
+  scroll-behavior: smooth;
+}
 
 body {
   scrollbar-gutter: stable both-edges;
@@ -18,11 +21,11 @@ body {
 }
 
 .open {
-    animation: fade-in 500ms forwards;
+  animation: fade-in 500ms forwards;
 }
 
 .close {
-    animation: fade-out 500ms forwards;
+  animation: fade-out 500ms forwards;
 }
 
 @keyframes shadowRolling {
@@ -176,7 +179,10 @@ body {
   z-index: -1;
   background-color: rgba(178, 215, 232, 0.2);
 }
-.animation-container .boom-container .shape.triangle, .animation-container .boom-container .shape.circle, .animation-container .boom-container .shape.circle.big, .animation-container .boom-container .shape.disc {
+.animation-container .boom-container .shape.triangle,
+.animation-container .boom-container .shape.circle,
+.animation-container .boom-container .shape.circle.big,
+.animation-container .boom-container .shape.disc {
   animation-delay: 0.38s;
   animation-duration: 3s;
   z-index: -1;
@@ -190,7 +196,10 @@ body {
   top: 155px;
   z-index: -1;
 }
-.animation-container .boom-container.second .shape.triangle, .animation-container .boom-container.second .shape.circle, .animation-container .boom-container.second .shape.circle.big, .animation-container .boom-container.second .shape.disc {
+.animation-container .boom-container.second .shape.triangle,
+.animation-container .boom-container.second .shape.circle,
+.animation-container .boom-container.second .shape.circle.big,
+.animation-container .boom-container.second .shape.disc {
   animation-delay: 1.9s;
   z-index: -1;
 }
@@ -202,82 +211,82 @@ body {
   0% {
     width: 12px;
     transform: translate(0px, 0px) rotate(-35deg);
- }
+  }
   15% {
     width: 50px;
- }
+  }
   30% {
     width: 12px;
     transform: translate(214px, -150px) rotate(-35deg);
- }
+  }
   30.1% {
     transform: translate(214px, -150px) rotate(46deg);
- }
+  }
   50% {
     width: 110px;
- }
+  }
   70% {
     width: 12px;
     transform: translate(500px, 150px) rotate(46deg);
- }
+  }
   70.1% {
     transform: translate(500px, 150px) rotate(-37deg);
- }
+  }
   85% {
     width: 50px;
- }
+  }
   100% {
     width: 12px;
     transform: translate(700px, 0) rotate(-37deg);
- }
+  }
 }
 @keyframes boom-circle {
   0% {
     opacity: 0;
- }
+  }
   5% {
     opacity: 1;
- }
+  }
   30% {
     opacity: 0;
     transform: scale(3);
- }
+  }
 }
 @keyframes boom-triangle-big {
   0% {
     opacity: 0;
- }
+  }
   5% {
     opacity: 1;
- }
+  }
   40% {
     opacity: 0;
     transform: scale(2.5) translate(50px, -50px) rotate(360deg);
- }
+  }
 }
 @keyframes boom-triangle {
   0% {
     opacity: 0;
- }
+  }
   5% {
     opacity: 1;
- }
+  }
   30% {
     opacity: 0;
     transform: scale(3) translate(20px, 40px) rotate(360deg);
- }
+  }
 }
 @keyframes boom-disc {
   0% {
     opacity: 0;
- }
+  }
   5% {
     opacity: 1;
- }
+  }
   40% {
     opacity: 0;
     transform: scale(2) translate(-70px, -30px);
- }
+  }
 }
 .footer {
   color: white;
@@ -287,6 +296,9 @@ body {
   font-weight: 200;
   padding: 10px 20px;
 }
-.footer a, .footer a:hover, .footer a:focus, .footer a:visited {
+.footer a,
+.footer a:hover,
+.footer a:focus,
+.footer a:visited {
   color: #c6c6c6;
 }
