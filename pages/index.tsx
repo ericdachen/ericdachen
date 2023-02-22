@@ -98,7 +98,6 @@ const Home: NextPage = () => {
           </Center>
         </Box>
       </div>
-
       <BrowserView>
         <>
           {isOpen && (

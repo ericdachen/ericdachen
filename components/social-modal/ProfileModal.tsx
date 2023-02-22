@@ -18,12 +18,12 @@ export default function SocialProfileSimple() {
     <Center py={6}>
       <Box
         maxW={"320px"}
-        w={"full"}
+        w={"auto"}
         bg={useColorModeValue("white", "gray.900")}
-        boxShadow={"2xl"}
         rounded={"lg"}
         p={6}
         textAlign={"center"}
+        justifyContent={"center"}
       >
         <ModalCloseButton marginLeft={"-10px"} marginBottom={"15px"} />
         <Avatar
@@ -88,7 +88,7 @@ export default function SocialProfileSimple() {
           </Badge>
         </Stack>
 
-        <Stack mt={8} direction={"row"} spacing={5} paddingLeft="26px">
+        <Stack mt={8} direction={"row"} spacing={5} justifyContent="center">
           <Link href="/EricChenSummer2023Dev.pdf">
             <Button
               flex={1}
