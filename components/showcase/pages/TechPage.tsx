@@ -45,6 +45,15 @@ function TechPage(props) {
             <WrapItem>
               <VStack spacing={10}>
                 <ProjectBox
+                  boxlink="https://www.datadoghq.com/"
+                  imageLink="/datadog.jpeg"
+                  height="30em"
+                  width="25em"
+                  fit="cover"
+                  heading="Datadog"
+                  description="Incoming @ Fall 2023"
+                ></ProjectBox>
+                <ProjectBox
                   boxlink="https://ca.rbcwealthmanagement.com/web/marita.simbul-lezon/mygps"
                   imageLink="/rbclogo2.jpeg"
                   align="48% 50%"
@@ -61,15 +70,7 @@ function TechPage(props) {
 
                   Finally, I had the chance to be an advocate for students with a 10K Coffees ideation workshop. I presented in a Student Partners x 10K Coffees Team Ideation workshop."
                 ></ProjectBox>
-                <ProjectBox
-                  boxlink="https://www.datadoghq.com/"
-                  imageLink="/datadog.jpeg"
-                  height="30em"
-                  width="25em"
-                  fit="cover"
-                  heading="Datadog"
-                  description="Incoming @ Fall 2023"
-                ></ProjectBox>
+
                 <ProjectBox
                   boxlink="https://www.linkedin.com/in/ericdachen/"
                   imageLink="/questionMark.png"
@@ -83,6 +84,16 @@ function TechPage(props) {
             </WrapItem>
             <WrapItem>
               <VStack spacing={10}>
+                <ProjectBox
+                  boxlink="https://www.wealthsimple.com/en-ca"
+                  imageLink="/wealthsimple.jpeg"
+                  align="50% 50%"
+                  height="30em"
+                  width="25em"
+                  fit="cover"
+                  heading="Wealthsimple"
+                  description="Incoming @ Summer 2023"
+                ></ProjectBox>
                 <ProjectBox
                   boxlink="https://carta.com/"
                   imageLink="/cartalogo2.jpeg"
@@ -106,16 +117,6 @@ function TechPage(props) {
                   At the same time, I also developed accessible data visualizations using React.js and Node.js generating over 500,000+ unique page views in less than one month 
                   during the peak of the pandemic.
                   Furthermore, I built a Gitlab CI/CD pipeline to automatically deploy to Firebase and implemented Agile methodology to rapidly iterate the prototype by conducting usability tests with 20+ program stakeholders and clients"
-                ></ProjectBox>
-                <ProjectBox
-                  boxlink="https://www.wealthsimple.com/en-ca"
-                  imageLink="/wealthsimple.jpeg"
-                  align="50% 50%"
-                  height="30em"
-                  width="25em"
-                  fit="cover"
-                  heading="Wealthsimple"
-                  description="Incoming @ Summer 2023"
                 ></ProjectBox>
               </VStack>
             </WrapItem>

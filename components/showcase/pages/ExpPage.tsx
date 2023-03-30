@@ -43,6 +43,22 @@ function ExpPage(props) {
       <br></br>
       <Center>
         <VStack spacing={"3vw"}>
+          <ProjectBox
+            boxlink="https://www.youtube.com/watch?v=ulJCI6m-lcs&list=LLcnA8PhziLrrPmpcUjqn4_A&ab_channel=EricChen"
+            imageLink="/fearless.png"
+            height="25em"
+            align="50% 0%"
+            fit="cover"
+            width="90vw"
+            heading="UX Laurier Design-a-thon 1st Place - Fearless"
+            description="We were asked “How might we design an experience that sparks curiosity, self-reflection, and experimentation to enhance learning and discovery?” Our solution was Fearless, 
+            Fearless is a mobile application designed to help you conquer your fears!
+
+            Using Adobe Illustrator, Adobe After Effects, and Figma, we gamified something we like to call “journeys”, which are simulations that help push you outside of your comfort zone. 
+            At every single point in your journey you’re going to have personalized reflection prompts to help you better understand your feelings, thoughts, and emotions, as well as encouraging messages along the way.
+            Once you complete your final reflection on the simulation, Fearless is going to challenge you to do that journey out in the real world, and monitor your progress as you complete these journeys. I'm super 
+            proud to announce that we placed 1st Place and won Best Pitch prize for our solution!"
+          ></ProjectBox>
           <Wrap justify={"center"} spacing={"3vw"}>
             <WrapItem>
               <VStack spacing={10}>
