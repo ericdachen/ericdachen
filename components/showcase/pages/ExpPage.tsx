@@ -47,7 +47,7 @@ function ExpPage(props) {
             boxlink="https://www.youtube.com/watch?v=ulJCI6m-lcs&list=LLcnA8PhziLrrPmpcUjqn4_A&ab_channel=EricChen"
             imageLink="/fearless.png"
             height="25em"
-            align="50% 0%"
+            align="0% 10%"
             fit="cover"
             width="90vw"
             heading="UX Laurier Design-a-thon 1st Place - Fearless"
