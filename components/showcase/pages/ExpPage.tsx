@@ -49,7 +49,7 @@ function ExpPage(props) {
             height="25em"
             align="0% 10%"
             fit="cover"
-            width="90vw"
+            width="96.5vw"
             heading="UX Laurier Design-a-thon 1st Place - Fearless"
             description="We were asked “How might we design an experience that sparks curiosity, self-reflection, and experimentation to enhance learning and discovery?” Our solution was Fearless, 
             Fearless is a mobile application designed to help you conquer your fears!
@@ -117,7 +117,7 @@ function ExpPage(props) {
               fit="cover"
               align="50% 0%"
               height="25em"
-              width="90vw"
+              width="96.5vw"
               heading="My Website"
               description="This website was made with love using Chakra UI and Next.js because
                     I'd heard great things about Chakra UI as a framework and wanted to try it instead
@@ -132,7 +132,7 @@ function ExpPage(props) {
               fit="cover"
               align="50% 0%"
               height="25em"
-              width="90vw"
+              width="96.5vw"
               heading="My Website"
               description="This website was made with love using Chakra UI and Next.js because
                   I'd heard great things about Chakra UI as a framework and wanted to try it instead
