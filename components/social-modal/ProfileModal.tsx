@@ -58,7 +58,7 @@ export default function SocialProfileSimple() {
         </Text>
         <Text>
           {`I'm currently a rising senior student studying Computer Science and Business Administration!
-          I'm currently looking for a Summer 2023 and Fall 2023 Internship!`}
+          I'm currently looking for a Summer 2024 Internship!`}
         </Text>
 
         <Stack align={"center"} justify={"center"} direction={"row"} mt={6}>
@@ -89,7 +89,7 @@ export default function SocialProfileSimple() {
         </Stack>
 
         <Stack mt={8} direction={"row"} spacing={5} justifyContent="center">
-          <Link href="/EricChenSummer2023Dev.pdf">
+          <Link href="/EricChenSummer2024.pdf">
             <Button
               flex={1}
               width={"100px"}

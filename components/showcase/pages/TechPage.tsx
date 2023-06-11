@@ -92,7 +92,9 @@ function TechPage(props) {
                   width="25em"
                   fit="cover"
                   heading="Wealthsimple"
-                  description="Incoming @ Summer 2023"
+                  description="I'm currently at Wealthsimple as part of the anti-money laundering and credit card engineering team. Our team is in charge of launching Wealthsimple's newest product, the credit card! We help audit all of the
+                  transactions that occur using this card to help identify cases of potential fraud. I also had the opportunity to work on a side project where I conceptualized, designed, and developed CashFx, a new currency conversion tool that enables clients to automatically convert
+                  foreign expenses to CAD using Typescript, React-Native hooks, Figma, and Xignite API"
                 ></ProjectBox>
                 <ProjectBox
                   boxlink="https://carta.com/"
