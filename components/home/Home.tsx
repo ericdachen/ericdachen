@@ -89,7 +89,7 @@ function HomePage() {
               <Heading fontSize={"8vw"}>{`Eric`}</Heading>
               <Heading
                 fontSize={"8vw"}
-                color={useColorModeValue("red.400", "purple.400")}
+                color={useColorModeValue("red.400", "blue.300")}
               >{`Chen`}</Heading>
             </HStack>
             <HStack>
@@ -101,7 +101,7 @@ function HomePage() {
               <div>
                 <Text
                   fontSize={"5vw"}
-                  color={useColorModeValue("red.400", "purple.400")}
+                  color={useColorModeValue("red.400", "blue.300")}
                 >
                   <ReactRotatingText
                     typingInterval={70}

@@ -50,7 +50,7 @@ function HomeMobile() {
               <Heading fontSize={"12vw"}>{`Eric`}</Heading>
               <Heading
                 fontSize={"12vw"}
-                color={useColorModeValue("red.400", "purple.400")}
+                color={useColorModeValue("red.400", "cyan.400")}
               >{`Chen`}</Heading>
             </HStack>
             <HStack>
@@ -62,7 +62,7 @@ function HomeMobile() {
               <div>
                 <Text
                   fontSize={"6vw"}
-                  color={useColorModeValue("red.400", "purple.400")}
+                  color={useColorModeValue("red.400", "cyan.400")}
                 >
                   <ReactRotatingText
                     typingInterval={70}
