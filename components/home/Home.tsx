@@ -33,7 +33,7 @@ function HomePage() {
   const homeTypingText = [
     "a CS and Business student",
     "a rising senior at Waterloo",
-    "looking for 2023 internships!",
+    "looking for 2024 internships!",
     "a stock market enthusiast",
     "a Canadian student",
     "a Full-Stack developer",
