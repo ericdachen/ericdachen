@@ -58,7 +58,7 @@ function ProjectBox(props) {
             zIndex={"1"}
             transition={"transform .2s"}
             _hover={{
-              opacity: 0.7,
+              opacity: 0.85,
             }}
           >
             <ScaleFade in={isOpen}>

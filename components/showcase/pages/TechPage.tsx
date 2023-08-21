@@ -60,7 +60,7 @@ function TechPage(props) {
                   fit="cover"
                   height="45em"
                   width="25em"
-                  heading="Royal Bank of Canada Fullstack Developer"
+                  heading="Royal Bank of Canada SWE Intern"
                   description="I had the opportunity to work at RBC as a Full Stack developer intern on the myGPS product launch. I had the opportunity to use a lot of different technologies
                   including Angular 7/11, TypeScript, NodeJS, MongoDB, SQL, GraphQL, Jenkins, & ElasticSearch. MyGPS is an investing tool that investment consultants use to show real-time data
                   visualizations of a client's finances including projections, financial history, and overall portfolio.
@@ -78,7 +78,7 @@ function TechPage(props) {
                   width="25em"
                   fit="cover"
                   heading="Could be you?"
-                  description="I'm actively looking for an internship for Winter 2023 and Summer 2023! If you are on this page, I'd love to stay in touch with you. All my contact information can be found at the bottom of this page 🤩"
+                  description="I'm actively looking for an internship for Summer 2024! If you are on this page, I'd love to stay in touch with you. All my contact information can be found at the bottom of this page 🤩"
                 ></ProjectBox>
               </VStack>
             </WrapItem>
@@ -91,7 +91,7 @@ function TechPage(props) {
                   height="30em"
                   width="25em"
                   fit="cover"
-                  heading="Wealthsimple"
+                  heading="Wealthsimple SWE Intern"
                   description="I'm currently at Wealthsimple as part of the anti-money laundering and credit card engineering team. Our team is in charge of launching Wealthsimple's newest product, the credit card! We help audit all of the
                   transactions that occur using this card to help identify cases of potential fraud. I also had the opportunity to work on a side project where I conceptualized, designed, and developed CashFx, a new currency conversion tool that enables clients to automatically convert
                   foreign expenses to CAD using Typescript, React-Native hooks, Figma, and Xignite API"
@@ -102,7 +102,7 @@ function TechPage(props) {
                   height="33em"
                   fit="cover"
                   width="25em"
-                  heading="Carta Back-end & Infrastructure Engineer"
+                  heading="Carta SWE Intern"
                   description="Carta is a San Francisco software company that specializes in capitalization table and valuation software.
                   At Carta, I had the opportunity to create and produce end-to-end automated event-tracking JSON files with Apache Airflow, transformation using CircleCI and GitHub API, and loading using AWS Redshift data warehousing and S3 buckets (ETL).
                   Furthermore, I migrated over 10 protobuf messages to enforce event-driven architecture schema guidelines and refactored the organization’s creation of kafka messages to support this schema for 500+ developers.
@@ -114,7 +114,7 @@ function TechPage(props) {
                   height="30em"
                   width="25em"
                   fit="contain"
-                  heading="Ontario Digital Service Web Developer"
+                  heading="Ontario Digital Service SWE Intern"
                   description="I designed and developed a secure portal using React.js, Node.js and Firebase to reduce program client time delays by over 50%
                   At the same time, I also developed accessible data visualizations using React.js and Node.js generating over 500,000+ unique page views in less than one month 
                   during the peak of the pandemic.
