@@ -51,7 +51,7 @@ function TechPage(props) {
                   width="25em"
                   fit="cover"
                   heading="Datadog"
-                  description="Incoming @ Fall 2023"
+                  description="As a Product Manager, I have a strong track record in driving data-driven product innovations. I conceptualized and led the development of a new feature for supporting Slack Audit Logs in Datadog, successfully launching it into private beta and generating over $300,000 in revenue. My role involved conducting more than 25 user interviews, directly steering the product direction for Datadog’s chat integrations with platforms like Slack, Microsoft Teams, and Google. I also carried out in-depth market research in the B2B observability market, analyzing and presenting key findings to executives, which contributed to a 35% reprioritization of our product roadmap. Additionally, I authored a front-page blog post and revamped our public-facing technical documentation, achieving over 100,000 unique page views."
                 ></ProjectBox>
                 <ProjectBox
                   boxlink="https://ca.rbcwealthmanagement.com/web/marita.simbul-lezon/mygps"
